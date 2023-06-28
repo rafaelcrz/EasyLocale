@@ -14,6 +14,15 @@
 		924455E12A4B081D0043C48D /* EasyLocaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924455E02A4B081D0043C48D /* EasyLocaleTests.swift */; };
 		924455EB2A4B081D0043C48D /* EasyLocaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924455EA2A4B081D0043C48D /* EasyLocaleUITests.swift */; };
 		924455ED2A4B081E0043C48D /* EasyLocaleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924455EC2A4B081E0043C48D /* EasyLocaleUITestsLaunchTests.swift */; };
+		924456082A4B88980043C48D /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924456072A4B88980043C48D /* TranslateViewModel.swift */; };
+		9244560A2A4B90BE0043C48D /* languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 924456092A4B90BE0043C48D /* languages.json */; };
+		9244560C2A4B91430043C48D /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244560B2A4B91430043C48D /* Language.swift */; };
+		924456112A4B9BA60043C48D /* LanguageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924456102A4B9BA60043C48D /* LanguageWrapper.swift */; };
+		924456132A4B9BEA0043C48D /* ExportableLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924456122A4B9BEA0043C48D /* ExportableLanguage.swift */; };
+		924456382A4BABE60043C48D /* LanguageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924456372A4BABE60043C48D /* LanguageListView.swift */; };
+		9244563A2A4BAC380043C48D /* Label+SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924456392A4BAC380043C48D /* Label+SystemImage.swift */; };
+		9244563C2A4BAF860043C48D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244563B2A4BAF860043C48D /* Constants.swift */; };
+		9244563E2A4C4BF20043C48D /* ExportableLocaleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244563D2A4C4BF20043C48D /* ExportableLocaleListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		924455E62A4B081D0043C48D /* EasyLocaleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyLocaleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		924455EA2A4B081D0043C48D /* EasyLocaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLocaleUITests.swift; sourceTree = "<group>"; };
 		924455EC2A4B081E0043C48D /* EasyLocaleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLocaleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		924456072A4B88980043C48D /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
+		924456092A4B90BE0043C48D /* languages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = languages.json; sourceTree = "<group>"; };
+		9244560B2A4B91430043C48D /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		924456102A4B9BA60043C48D /* LanguageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageWrapper.swift; sourceTree = "<group>"; };
+		924456122A4B9BEA0043C48D /* ExportableLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportableLanguage.swift; sourceTree = "<group>"; };
+		924456372A4BABE60043C48D /* LanguageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageListView.swift; sourceTree = "<group>"; };
+		924456392A4BAC380043C48D /* Label+SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+SystemImage.swift"; sourceTree = "<group>"; };
+		9244563B2A4BAF860043C48D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9244563D2A4C4BF20043C48D /* ExportableLocaleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportableLocaleListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +118,15 @@
 				924455D22A4B081D0043C48D /* Assets.xcassets */,
 				924455D72A4B081D0043C48D /* EasyLocale.entitlements */,
 				924455D42A4B081D0043C48D /* Preview Content */,
+				924456072A4B88980043C48D /* TranslateViewModel.swift */,
+				924456092A4B90BE0043C48D /* languages.json */,
+				9244560B2A4B91430043C48D /* Language.swift */,
+				924456102A4B9BA60043C48D /* LanguageWrapper.swift */,
+				924456122A4B9BEA0043C48D /* ExportableLanguage.swift */,
+				924456372A4BABE60043C48D /* LanguageListView.swift */,
+				924456392A4BAC380043C48D /* Label+SystemImage.swift */,
+				9244563B2A4BAF860043C48D /* Constants.swift */,
+				9244563D2A4C4BF20043C48D /* ExportableLocaleListView.swift */,
 			);
 			path = EasyLocale;
 			sourceTree = "<group>";
@@ -233,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9244560A2A4B90BE0043C48D /* languages.json in Resources */,
 				924455D62A4B081D0043C48D /* Preview Assets.xcassets in Resources */,
 				924455D32A4B081D0043C48D /* Assets.xcassets in Resources */,
 			);
@@ -259,8 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924456082A4B88980043C48D /* TranslateViewModel.swift in Sources */,
+				924456132A4B9BEA0043C48D /* ExportableLanguage.swift in Sources */,
+				9244560C2A4B91430043C48D /* Language.swift in Sources */,
 				924455D12A4B081B0043C48D /* ContentView.swift in Sources */,
+				9244563E2A4C4BF20043C48D /* ExportableLocaleListView.swift in Sources */,
 				924455CF2A4B081B0043C48D /* EasyLocaleApp.swift in Sources */,
+				9244563A2A4BAC380043C48D /* Label+SystemImage.swift in Sources */,
+				924456112A4B9BA60043C48D /* LanguageWrapper.swift in Sources */,
+				924456382A4BABE60043C48D /* LanguageListView.swift in Sources */,
+				9244563C2A4BAF860043C48D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
