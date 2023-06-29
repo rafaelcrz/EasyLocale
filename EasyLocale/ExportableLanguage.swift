@@ -7,7 +7,6 @@
 
 import Foundation
 
-//    "poi.closed.unsure": "Não tenho certeza",
 struct ExportableLanguage {
     let id: UUID = UUID()
     let key: String
