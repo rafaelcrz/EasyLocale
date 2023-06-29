@@ -11,8 +11,10 @@ import SwiftUI
 struct ExportableLocaleListView: View {
     
     var exportables: [String: [ExportableLanguage]] = [:]
+    var actionRemove: (ExportableLanguage) -> Void
+    var actionEdit: (ExportableLanguage) -> Void
     
-    @State var search: String = ""
+    @State private var search: String = ""
     
     private var keySections: [String] {
         Array(exportables.keys).sorted(by: { $0 < $1 })
@@ -29,17 +31,24 @@ struct ExportableLocaleListView: View {
     var body: some View {
         List {
             ForEach(searchKeyResults, id: \.self) { key in
-                Section {
-                    ForEach(exportables[key] ?? [], id:\.id) { exportable in
+                ForEach(exportables[key] ?? [], id:\.id) { exportable in
+                    HStack {
+                        Image(systemName: "network")
                         VStack(alignment: .leading, spacing: 4) {
-                            Text("\(exportable.value)")
+                            Text("String key: \(exportable.key)")
                                 .fontWeight(.bold)
-                            Text("\(exportable.descriptionLanguage) (\(exportable.codeLanguage))")
+                            Text("String value: \(exportable.value)")
+                                .fontWeight(.bold)
                         }
-                    }
-                } header: {
-                    Text("String key: \(key)".uppercased())
-                        .fontWeight(.bold)
+                        Spacer()
+                        ButtonImage(systemName: "trash", foregroundColor: .red, action: {
+                            actionRemove(exportable)
+                        })
+                        ButtonImage(systemName: "pencil", action: {
+                            actionEdit(exportable)
+                        })
+
+                    }.padding()
                 }
             }
         }
@@ -73,6 +82,6 @@ struct ExportableLocaleListView_Previews: PreviewProvider {
                     descriptionLanguage: "English"
                 )
             ]
-        ])
+        ], actionRemove: {_ in }, actionEdit: {_ in})
     }
 }
