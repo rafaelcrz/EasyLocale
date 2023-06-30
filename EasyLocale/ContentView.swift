@@ -23,7 +23,7 @@ struct ContentView: View {
                 }
                 
                 // MARK: - Append Translations
-                ButtonImage(systemName: .plus, text: "Append translations") {
+                ButtonImage(systemName: .update, text: "Update translations") {
                     viewModel.addKeyStringToStringsFile()
                 }
             }.padding()
@@ -53,32 +53,34 @@ struct ContentView: View {
             }.padding()
             
         } detail: {
-            ExportableLocaleDetailView(
-                shouldShowProgressView: viewModel.shouldShowProgressView(),
-                progress: viewModel.progress,
-                numberOfLines: viewModel.numberOfLines,
-                listOfFiles: viewModel.listOfFiles(),
-                currentFileTransaltions: viewModel.currentFileTransaltions(),
-                currentFile: $viewModel.currentFile,
-                actionRemove: {
-                    viewModel.deleteTransalation($0)
-                }, actionEdit: {
-                    viewModel.editTransaction($0)
-                }
-            ).navigationSplitViewColumnWidth(min: columnWidth, ideal: columnWidth)
-            
-            // MARK: - File Options
-            HStack {
-                ButtonImage(systemName: .import, text: "Import .strings") {
-                    viewModel.importStringLanguage(urls: importPanel())
-                }
+            VStack {
+                ExportableLocaleDetailView(
+                    shouldShowProgressView: viewModel.shouldShowProgressView(),
+                    progress: viewModel.progress,
+                    numberOfLines: viewModel.numberOfLines,
+                    listOfFiles: viewModel.listOfFiles(),
+                    currentFileTransaltions: viewModel.currentFileTransaltions(),
+                    currentFile: $viewModel.currentFile,
+                    actionRemove: {
+                        viewModel.deleteTransalation($0)
+                    }, actionEdit: {
+                        viewModel.editTransaction($0)
+                    }
+                ).navigationSplitViewColumnWidth(min: columnWidth, ideal: columnWidth)
                 
-                ButtonImage(systemName: .export, text: "Export .strings") {
-                    viewModel.exportStringLanguage(url: exportPanel())
+                // MARK: - File Options
+                HStack {
+                    ButtonImage(systemName: .import, text: "Import .strings") {
+                        viewModel.importStringLanguage(urls: importPanel())
+                    }
+                    
+                    ButtonImage(systemName: .export, text: "Export .strings") {
+                        viewModel.exportStringLanguage(url: exportPanel())
+                    }
+                    
+                    Spacer()
                 }
-                
-                Spacer()
-            }
+            }.padding()
         }
     }
 }
@@ -104,13 +106,13 @@ private extension ContentView {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//            .padding()
-//            .previewLayout(.fixed(width: 950, height: 400))
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .padding()
+            .previewLayout(.fixed(width: 950, height: 400))
+    }
+}
 
 import SwiftUI
 
@@ -121,7 +123,7 @@ struct ExportableLocaleDetailView: View {
     var listOfFiles: [String]
     var currentFileTransaltions: [String: [ExportableLanguage]]
     @Binding var currentFile: String
-        
+    
     var actionRemove: (ExportableLanguage) -> Void
     var actionEdit: (ExportableLanguage) -> Void
     
@@ -145,10 +147,10 @@ struct ExportableLocaleDetailView: View {
                 currentFile: currentFile,
                 actionRemove: {
                     actionRemove($0)
-//                    viewModel.deleteTransalation($0)
+                    //                    viewModel.deleteTransalation($0)
                 }, actionEdit: {
                     actionEdit($0)
-//                    viewModel.editTransaction($0)
+                    //                    viewModel.editTransaction($0)
                 }
             )
         }
