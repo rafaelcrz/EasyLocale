@@ -8,9 +8,12 @@
 import Foundation
 
 final class TranslateViewModel: ObservableObject {
-    @Published var languagesToExport: [ExportableLanguage] = []
+    private let localizableStringsFileName: String = "Localizable.strings"
+    private let localizableStringsFolderExtension: String = ".lproj"
+    private let aplicationLocale: String = "en-US"
     
     // MARK: - Publshiers
+    @Published var languagesToExport: [ExportableLanguage] = []
     @Published var selectedLanguage: String = ""
     @Published var availableLanguages: [Language] = []
     @Published var currentKey: String = ""
@@ -117,9 +120,9 @@ final class TranslateViewModel: ObservableObject {
                                 key: key,
                                 value: self.saniitedValueIfNeeded(value),
                                 codeLanguage: stringFileName,
-                                descriptionLanguage: ("\(Locale(identifier: "pt_BR").localizedString(forLanguageCode: stringFileName) ?? "nullo") - \(country?.description ?? "")")
+                                descriptionLanguage: ("\(Locale(identifier: self.aplicationLocale).localizedString(forLanguageCode: stringFileName) ?? "nullo") - \(country?.description ?? "")")
                             )
-                            //                    descriptionLanguage: ("\(Locale(identifier: "pt_BR").localizedString(forLanguageCode: stringFileName) ?? "nullo") - \(Locale(identifier: "pt-BR").localizedString(forRegionCode: stringFileName) ?? "nullo")")
+                            
                             guard !self.exportableLanguages.contains(where: { $0.key == key && $0.codeLanguage == stringFileName }) else {
                                 return
                             }
@@ -152,7 +155,7 @@ final class TranslateViewModel: ObservableObject {
             }
             
             
-            let folderPath: URL = url.appendingPathComponent("\(language).lproj")
+            let folderPath: URL = url.appendingPathComponent("\(language)\(localizableStringsFolderExtension)")
             createStringsFolder(path: folderPath)
             
             let content: String = lines.joined(separator: "\n")
@@ -204,7 +207,7 @@ private extension TranslateViewModel {
     
     private func createStringsFile(path: URL, content: String) {
         do {
-            let filePath: URL = path.appendingPathComponent("Localizable.strings")
+            let filePath: URL = path.appendingPathComponent(localizableStringsFileName)
             try content.write(to: filePath, atomically: true, encoding: .utf8)
         } catch {
             fatalError(error.localizedDescription)
