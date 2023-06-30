@@ -173,10 +173,22 @@ final class TranslateViewModel: ObservableObject {
         }
     }
     
-    func exportableGroupedByCode() -> [String: [ExportableLanguage]] {
+    private func exportableGroupedByCode() -> [String: [ExportableLanguage]] {
         return Dictionary(grouping: exportableLanguages) { exportable in
             return exportable.codeLanguage
         }
+    }
+    
+    func listOfFiles() -> [String] {
+        Array(exportableGroupedByCode().keys.sorted(by: <))
+    }
+    
+    func currentFileTransaltions() -> [String: [ExportableLanguage]] {
+        guard let transalations: [ExportableLanguage] = exportableGroupedByCode()[currentFile] else {
+            return [:]
+        }
+        
+        return [currentFile: transalations]
     }
     
     func getLocalizedString(forLanguage language: Language) -> String {
