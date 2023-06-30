@@ -32,25 +32,29 @@ struct ExportableLocaleListView: View {
     var body: some View {
         List {
             ForEach(Array(exportables.keys).sorted(by: { $0 < $1 }), id: \.self) { key in
-                ForEach(searchKeyResults[key] ?? [], id:\.key) { exportable in
-                    HStack {
-                        Image(systemName: "network")
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("String key: \(exportable.key)")
-                                .fontWeight(.bold)
-                            Text("String value: \(exportable.value)")
-                                .fontWeight(.bold)
-                        }
-                        Spacer()
-                        ButtonImage(systemName: .trash, foregroundColor: .red, action: {
-                            actionRemove(exportable)
-                        })
-                        ButtonImage(systemName: .edit, action: {
-                            actionEdit(exportable)
-                        })
+                Section {
+                    ForEach(searchKeyResults[key] ?? [], id:\.key) { exportable in
+                        HStack {
+                            Image(systemName: "network")
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text("String key: \(exportable.key)")
+                                    .fontWeight(.bold)
+                                Text("String value: \(exportable.value)")
+                                    .fontWeight(.bold)
+                            }
+                            Spacer()
+                            ButtonImage(systemName: .trash, foregroundColor: .red, action: {
+                                actionRemove(exportable)
+                            })
+                            ButtonImage(systemName: .edit, action: {
+                                actionEdit(exportable)
+                            })
 
-                    }.padding()
-                }
+                        }.padding()
+                    }
+                } header: {
+                    Text("Total keys: \(searchKeyResults[key]?.count ?? 0)")
+                }.headerProminence(Prominence.increased)
             }
         }
         .searchable(text: $search)
