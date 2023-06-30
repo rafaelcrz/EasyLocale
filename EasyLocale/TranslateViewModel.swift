@@ -19,7 +19,7 @@ final class TranslateViewModel: ObservableObject {
     @Published var progress: Double = 0.0
     @Published var numberOfFiles: Int = 0
     @Published var numberOfLines: Int = 0
-        
+    
     private let languageWrapper: LanguageWrapper = LanguageWrapper()
     
     init() {
@@ -27,7 +27,7 @@ final class TranslateViewModel: ObservableObject {
         selectedLanguage = availableLanguages.first?.localeIdentifier ?? ""
     }
     
-    func addNewLanguage() {
+    func addNewLanguageToTranslation() {
         guard let language: Language = availableLanguages.first(where: { $0.localeIdentifier == selectedLanguage }) else {
             return
         }
@@ -46,7 +46,7 @@ final class TranslateViewModel: ObservableObject {
         languagesToExport.append(exportableLanguage)
     }
     
-    func addKeyStringToStringsFile() {
+    func updateStringsFileWithCurrentKeyValue() {
         for exportable in languagesToExport {
             let exportableLanguage: ExportableLanguage = .init(
                 key: currentKey,
@@ -62,15 +62,6 @@ final class TranslateViewModel: ObservableObject {
             }
         }
         
-    }
-    
-    private func getFolderName(fromURL url: URL) -> String? {
-        let index: Int = (url.pathComponents.count - 2)
-        guard let path = url.pathComponents.object(index: index) else {
-            return nil
-        }
-        
-        return (path as NSString).deletingPathExtension
     }
     
     func importStringLanguage(urls: [URL]?) {
@@ -93,7 +84,7 @@ final class TranslateViewModel: ObservableObject {
                     }
                     
                     let lines: [String] = fullContent.components(separatedBy: .newlines)
-
+                    
                     DispatchQueue.main.async {
                         self.numberOfLines = lines.count
                     }
@@ -144,21 +135,7 @@ final class TranslateViewModel: ObservableObject {
         }
     }
     
-    func saniitedValueIfNeeded(_ value: String) -> String {
-        var saniitedString: String = value
-        
-        if value.last == ";" {
-            saniitedString = String(value.dropLast())
-        }
-        
-        if value.first == " " {
-            saniitedString = String(saniitedString.dropFirst())
-        }
-        
-        return saniitedString
-    }
-    
-    func exportStringLanguage(url: URL?) {
+    func exportTransalationToStringsFile(url: URL?) {
         guard let url = url else {
             return
         }
@@ -179,27 +156,15 @@ final class TranslateViewModel: ObservableObject {
             createStringsFolder(path: folderPath)
             
             let content: String = lines.joined(separator: "\n")
-            createStringFile(path: folderPath, content: content)
+            createStringsFile(path: folderPath, content: content)
         }
     }
     
-    func exportableGroupedByKey() -> [String: [ExportableLanguage]] {
-        return Dictionary(grouping: exportableLanguages) { exportable in
-            return exportable.key
-        }
-    }
-    
-    private func exportableGroupedByCode() -> [String: [ExportableLanguage]] {
-        return Dictionary(grouping: exportableLanguages) { exportable in
-            return exportable.codeLanguage
-        }
-    }
-    
-    func listOfFiles() -> [String] {
+    func getListOfTranslationsFile() -> [String] {
         Array(exportableGroupedByCode().keys.sorted(by: <))
     }
     
-    func currentFileTransaltions() -> [String: [ExportableLanguage]] {
+    func getTranslationFromCurrentFile() -> [String: [ExportableLanguage]] {
         guard let transalations: [ExportableLanguage] = exportableGroupedByCode()[currentFile] else {
             return [:]
         }
@@ -226,7 +191,9 @@ final class TranslateViewModel: ObservableObject {
     func shouldShowProgressView() -> Bool {
         return progress > 0
     }
-    
+}
+
+private extension TranslateViewModel {
     private func createStringsFolder(path: URL) {
         do {
             try FileManager.default.createDirectory(at: path, withIntermediateDirectories: true)
@@ -235,12 +202,41 @@ final class TranslateViewModel: ObservableObject {
         }
     }
     
-    private func createStringFile(path: URL, content: String) {
+    private func createStringsFile(path: URL, content: String) {
         do {
             let filePath: URL = path.appendingPathComponent("Localizable.strings")
             try content.write(to: filePath, atomically: true, encoding: .utf8)
         } catch {
             fatalError(error.localizedDescription)
         }
+    }
+    
+    private func exportableGroupedByCode() -> [String: [ExportableLanguage]] {
+        return Dictionary(grouping: exportableLanguages) { exportable in
+            return exportable.codeLanguage
+        }
+    }
+    
+    private func saniitedValueIfNeeded(_ value: String) -> String {
+        var saniitedString: String = value
+        
+        if value.last == ";" {
+            saniitedString = String(value.dropLast())
+        }
+        
+        if value.first == " " {
+            saniitedString = String(saniitedString.dropFirst())
+        }
+        
+        return saniitedString
+    }
+    
+    private func getFolderName(fromURL url: URL) -> String? {
+        let index: Int = (url.pathComponents.count - 2)
+        guard let path = url.pathComponents.object(index: index) else {
+            return nil
+        }
+        
+        return (path as NSString).deletingPathExtension
     }
 }

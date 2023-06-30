@@ -24,7 +24,7 @@ struct ContentView: View {
                 
                 // MARK: - Append Translations
                 ButtonImage(systemName: .update, text: "Update translations") {
-                    viewModel.addKeyStringToStringsFile()
+                    viewModel.updateStringsFileWithCurrentKeyValue()
                 }
             }.padding()
             
@@ -47,7 +47,7 @@ struct ContentView: View {
                     
                     // MARK: - New Language
                     ButtonImage(systemName: .plus, text: "Add language") {
-                        viewModel.addNewLanguage()
+                        viewModel.addNewLanguageToTranslation()
                     }
                 }
             }.padding()
@@ -58,8 +58,8 @@ struct ContentView: View {
                     shouldShowProgressView: viewModel.shouldShowProgressView(),
                     progress: viewModel.progress,
                     numberOfLines: viewModel.numberOfLines,
-                    listOfFiles: viewModel.listOfFiles(),
-                    currentFileTransaltions: viewModel.currentFileTransaltions(),
+                    listOfFiles: viewModel.getListOfTranslationsFile(),
+                    currentFileTransaltions: viewModel.getTranslationFromCurrentFile(),
                     currentFile: $viewModel.currentFile,
                     actionRemove: {
                         viewModel.deleteTransalation($0)
@@ -75,7 +75,7 @@ struct ContentView: View {
                     }
                     
                     ButtonImage(systemName: .export, text: "Export .strings") {
-                        viewModel.exportStringLanguage(url: exportPanel())
+                        viewModel.exportTransalationToStringsFile(url: exportPanel())
                     }
                     
                     Spacer()
