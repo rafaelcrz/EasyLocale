@@ -6,89 +6,110 @@
 //
 import SwiftUI
 
-struct ContentView: View {
-    @State var showingAddKeyDialog: Bool = false
-    
+struct ContentView: View {    
     @StateObject var viewModel: TranslateViewModel = .init()
     
     var body: some View {
         NavigationSplitView {
-            Text("Language key")
-            TextField("string key", text: $viewModel.currentKey)
-                .textFieldStyle(.roundedBorder)
-                .padding()
+            VStack(alignment: .leading, spacing: 16) {
+                // MARK: - Translation Key
+                HStack {
+                    Text("Translation key")
+                        .fontWeight(.bold)
+                    TextField("translation.key", text: $viewModel.currentKey)
+                        .textFieldStyle(.roundedBorder)
+                }
+                
+                // MARK: - Append Translations
+                ButtonImage(systemName: .plus, text: "Append translations") {
+                    viewModel.addKeyStringToStringsFile()
+                }
+            }.padding()
+            
+            // MARK: - Translation List
+            Text("Translations")
+                .multilineTextAlignment(.leading)
+                .fontWeight(.bold)
             LanguageListView(exportableList: $viewModel.languagesToExport)
-                .navigationSplitViewColumnWidth(400)
+                .navigationSplitViewColumnWidth(min: 400, ideal: 400)
             
             VStack(alignment: .leading) {
                 HStack {
-                    Picker("Locales", selection: $viewModel.selectedLanguage) {
+                    // MARK: - Available Languages
+                    Picker("Languages", selection: $viewModel.selectedLanguage) {
                         ForEach(viewModel.availableLanguages, id:\.localeIdentifier) { language in
                             Text(viewModel.getLocalizedString(forLanguage: language))
                                 .tag(language.localeIdentifier)
                         }
                     }
-                    Button {
+                    
+                    // MARK: - New Language
+                    ButtonImage(systemName: .plus, text: "Add language") {
                         viewModel.addNewLanguage()
-                    } label: {
-                        Label("Add location", systemImage: .plus)
                     }
-                    .buttonStyle(.bordered)
-                    .controlSize(.large)
                 }
-                
-                Button {
-                    showingAddKeyDialog.toggle()
-                    viewModel.addKeyStringToStringsFile()
-                } label: {
-                    Text("Add (\(viewModel.currentKey)) key to strings file")
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(.bordered)
-                .controlSize(.large)
             }.padding()
             
         } detail: {
             VStack {
-                ExportableLocaleListView(exportables: viewModel.exportableGroupedByKey())
+                // MARK: - Import Progress
+                if viewModel.progress > 0 {
+                    ProgressView(value: viewModel.progress, total: Double(viewModel.numberOfLines))
+                }
                 
+                // MARK: - String File
+                Picker("String file", selection: $viewModel.currentFile) {
+                    ForEach(Array(viewModel.exportableGroupedByCode().keys.sorted(by: <)), id: \.self) { key in
+                        Text(key).tag(key)
+                    }
+                }.pickerStyle(.segmented)
+                
+                // MARK: - File String Translations
+                ExportableLocaleListView(
+                    exportables: [viewModel.currentFile: viewModel.exportableGroupedByCode()[viewModel.currentFile] ?? []], actionRemove: {
+                        viewModel.deleteTransalation($0)
+                    }, actionEdit: {
+                        viewModel.editTransaction($0)
+                    }
+                )
+                
+                // MARK: - File Options
                 HStack {
-                    Button {
-                        viewModel.exportStringLanguage()
-                    } label: {
-                        Label("Preview .strings", systemImage: "pc")
-                            .frame(maxWidth: .infinity)
+                    ButtonImage(systemName: .import, text: "Import .strings") {
+                        viewModel.importStringLanguage(urls: importPanel())
                     }
-                    .buttonStyle(.bordered)
-                    .controlSize(.large)
-                    Button {
-                        viewModel.exportStringLanguage()
-                    } label: {
-                        Label("Export .strings", systemImage: .export)
-                            .frame(maxWidth: .infinity)
-                    }
-                    .buttonStyle(.bordered)
-                    .controlSize(.large)
-                }
-                
-                Button {
                     
-                } label: {
-                    Label("Location to export", systemImage: .folder)
-                        .frame(maxWidth: .infinity)
+                    ButtonImage(systemName: .export, text: "Export .strings") {
+                        viewModel.exportStringLanguage(url: exportPanel())
+                    }
+                    
+                    Spacer()
                 }
-                .buttonStyle(.bordered)
-                .controlSize(.large)
             }
             .navigationSplitViewColumnWidth(min: 500, ideal: 500)
             .padding()
-        }.alert(viewModel.currentKey, isPresented: $showingAddKeyDialog) {
-            Button("OK") {}
-            Button("cancel") { showingAddKeyDialog = false }
-        } message: {
-            Text("Add \(viewModel.currentKey) to the pt-Br.lproj file\n\nTo add more languages click on \"Add location\" button ")
         }
+    }
+}
 
+private extension ContentView {
+    func exportPanel() -> URL? {
+        let panel = NSOpenPanel()
+        panel.showsHiddenFiles = false
+        panel.canChooseFiles = false
+        panel.canChooseDirectories = true
+        panel.runModal()
+        return panel.url
+    }
+    
+    func importPanel() -> [URL]? {
+        let panel = NSOpenPanel();
+        panel.showsHiddenFiles = false
+        panel.canChooseDirectories = false
+        panel.allowsMultipleSelection = true
+        panel.allowedContentTypes = [.strings]
+        panel.runModal()
+        return panel.urls
     }
 }
 
