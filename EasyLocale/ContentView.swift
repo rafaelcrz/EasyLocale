@@ -6,7 +6,9 @@
 //
 import SwiftUI
 
-struct ContentView: View {    
+struct ContentView: View {
+    private let columnWidth: CGFloat = 500
+    
     @StateObject var viewModel: TranslateViewModel = .init()
     
     var body: some View {
@@ -31,7 +33,7 @@ struct ContentView: View {
                 .multilineTextAlignment(.leading)
                 .fontWeight(.bold)
             LanguageListView(exportableList: $viewModel.languagesToExport)
-                .navigationSplitViewColumnWidth(min: 400, ideal: 400)
+                .navigationSplitViewColumnWidth(min: columnWidth, ideal: columnWidth)
             
             VStack(alignment: .leading) {
                 HStack {
@@ -59,14 +61,15 @@ struct ContentView: View {
                 
                 // MARK: - String File
                 Picker("String file", selection: $viewModel.currentFile) {
-                    ForEach(Array(viewModel.exportableGroupedByCode().keys.sorted(by: <)), id: \.self) { key in
-                        Text(key).tag(key)
+                    ForEach(viewModel.listOfFiles(), id: \.self) { file in
+                        Text(file).tag(file)
                     }
                 }.pickerStyle(.segmented)
                 
                 // MARK: - File String Translations
                 ExportableLocaleListView(
-                    exportables: [viewModel.currentFile: viewModel.exportableGroupedByCode()[viewModel.currentFile] ?? []], actionRemove: {
+                    exportables: viewModel.currentFileTransaltions(),
+                    actionRemove: {
                         viewModel.deleteTransalation($0)
                     }, actionEdit: {
                         viewModel.editTransaction($0)
@@ -86,7 +89,7 @@ struct ContentView: View {
                     Spacer()
                 }
             }
-            .navigationSplitViewColumnWidth(min: 500, ideal: 500)
+            .navigationSplitViewColumnWidth(min: columnWidth, ideal: columnWidth)
             .padding()
         }
     }
