@@ -27,8 +27,7 @@ struct LanguageListView: View {
                         .controlSize(.large)
                     }
                 }
-            }
-            
+            }.scrollIndicators(.visible)
         }
     }
     
