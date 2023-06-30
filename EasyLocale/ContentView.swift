@@ -53,7 +53,7 @@ struct ContentView: View {
         } detail: {
             VStack {
                 // MARK: - Import Progress
-                if viewModel.progress > 0 {
+                if viewModel.shouldShowProgressView() {
                     ProgressView(value: viewModel.progress, total: Double(viewModel.numberOfLines))
                 }
                 

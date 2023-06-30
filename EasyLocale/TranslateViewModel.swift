@@ -195,6 +195,10 @@ final class TranslateViewModel: ObservableObject {
         languagesToExport.append(translation)
     }
     
+    func shouldShowProgressView() -> Bool {
+        return progress > 0
+    }
+    
     private func createStringFile(path: URL, fileName: String, content: String) {
         do {
             let filePath: URL = path.appendingPathComponent("\(fileName).strings")
