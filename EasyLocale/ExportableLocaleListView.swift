@@ -11,27 +11,28 @@ import SwiftUI
 struct ExportableLocaleListView: View {
     
     var exportables: [String: [ExportableLanguage]] = [:]
+    var currentFile: String
     var actionRemove: (ExportableLanguage) -> Void
     var actionEdit: (ExportableLanguage) -> Void
     
     @State private var search: String = ""
     
-    private var keySections: [String] {
-        Array(exportables.keys).sorted(by: { $0 < $1 })
-    }
-    
-    private var searchKeyResults: [String] {
+    private var searchKeyResults: [String: [ExportableLanguage]] {
         if search.isEmpty {
-            return keySections
+            return exportables
         } else {
-            return keySections.filter { $0.contains(search) }
+            return exportables.filter {
+                $0.value.contains(where: {
+                    return $0.key.uppercased() == search.uppercased()
+                })
+            }
         }
     }
     
     var body: some View {
         List {
-            ForEach(searchKeyResults, id: \.self) { key in
-                ForEach(exportables[key] ?? [], id:\.id) { exportable in
+            ForEach(Array(exportables.keys).sorted(by: { $0 < $1 }), id: \.self) { key in
+                ForEach(searchKeyResults[key] ?? [], id:\.key) { exportable in
                     HStack {
                         Image(systemName: "network")
                         VStack(alignment: .leading, spacing: 4) {
@@ -82,6 +83,6 @@ struct ExportableLocaleListView_Previews: PreviewProvider {
                     descriptionLanguage: "English"
                 )
             ]
-        ], actionRemove: {_ in }, actionEdit: {_ in})
+        ], currentFile: "pt_Br", actionRemove: {_ in }, actionEdit: {_ in})
     }
 }
