@@ -53,44 +53,32 @@ struct ContentView: View {
             }.padding()
             
         } detail: {
-            VStack {
-                // MARK: - Import Progress
-                if viewModel.shouldShowProgressView() {
-                    ProgressView(value: viewModel.progress, total: Double(viewModel.numberOfLines))
+            ExportableLocaleDetailView(
+                shouldShowProgressView: viewModel.shouldShowProgressView(),
+                progress: viewModel.progress,
+                numberOfLines: viewModel.numberOfLines,
+                listOfFiles: viewModel.listOfFiles(),
+                currentFileTransaltions: viewModel.currentFileTransaltions(),
+                currentFile: $viewModel.currentFile,
+                actionRemove: {
+                    viewModel.deleteTransalation($0)
+                }, actionEdit: {
+                    viewModel.editTransaction($0)
+                }
+            ).navigationSplitViewColumnWidth(min: columnWidth, ideal: columnWidth)
+            
+            // MARK: - File Options
+            HStack {
+                ButtonImage(systemName: .import, text: "Import .strings") {
+                    viewModel.importStringLanguage(urls: importPanel())
                 }
                 
-                // MARK: - String File
-                Picker("String file", selection: $viewModel.currentFile) {
-                    ForEach(viewModel.listOfFiles(), id: \.self) { file in
-                        Text(file).tag(file)
-                    }
-                }.pickerStyle(.segmented)
-                
-                // MARK: - File String Translations
-                ExportableLocaleListView(
-                    exportables: viewModel.currentFileTransaltions(),
-                    actionRemove: {
-                        viewModel.deleteTransalation($0)
-                    }, actionEdit: {
-                        viewModel.editTransaction($0)
-                    }
-                )
-                
-                // MARK: - File Options
-                HStack {
-                    ButtonImage(systemName: .import, text: "Import .strings") {
-                        viewModel.importStringLanguage(urls: importPanel())
-                    }
-                    
-                    ButtonImage(systemName: .export, text: "Export .strings") {
-                        viewModel.exportStringLanguage(url: exportPanel())
-                    }
-                    
-                    Spacer()
+                ButtonImage(systemName: .export, text: "Export .strings") {
+                    viewModel.exportStringLanguage(url: exportPanel())
                 }
+                
+                Spacer()
             }
-            .navigationSplitViewColumnWidth(min: columnWidth, ideal: columnWidth)
-            .padding()
         }
     }
 }
@@ -116,10 +104,59 @@ private extension ContentView {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .padding()
-            .previewLayout(.fixed(width: 950, height: 400))
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//            .padding()
+//            .previewLayout(.fixed(width: 950, height: 400))
+//    }
+//}
+
+import SwiftUI
+
+struct ExportableLocaleDetailView: View {
+    let shouldShowProgressView: Bool
+    let progress: Double
+    let numberOfLines: Int
+    var listOfFiles: [String]
+    var currentFileTransaltions: [String: [ExportableLanguage]]
+    @Binding var currentFile: String
+        
+    var actionRemove: (ExportableLanguage) -> Void
+    var actionEdit: (ExportableLanguage) -> Void
+    
+    var body: some View {
+        VStack {
+            // MARK: - Import Progress
+            if shouldShowProgressView {
+                ProgressView(value: progress, total: Double(numberOfLines))
+            }
+            
+            // MARK: - String File
+            Picker("String file", selection: $currentFile) {
+                ForEach(listOfFiles, id: \.self) { file in
+                    Text(file).tag(file)
+                }
+            }.pickerStyle(.segmented)
+            
+            // MARK: - File String Translations
+            ExportableLocaleListView(
+                exportables: currentFileTransaltions,
+                currentFile: currentFile,
+                actionRemove: {
+                    actionRemove($0)
+//                    viewModel.deleteTransalation($0)
+                }, actionEdit: {
+                    actionEdit($0)
+//                    viewModel.editTransaction($0)
+                }
+            )
+        }
     }
 }
+
+//struct ExportableLocaleDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ExportableLocaleDetailView()
+//    }
+//}
