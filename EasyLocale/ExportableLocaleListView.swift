@@ -41,10 +41,10 @@ struct ExportableLocaleListView: View {
                                 .fontWeight(.bold)
                         }
                         Spacer()
-                        ButtonImage(systemName: "trash", foregroundColor: .red, action: {
+                        ButtonImage(systemName: .trash, foregroundColor: .red, action: {
                             actionRemove(exportable)
                         })
-                        ButtonImage(systemName: "pencil", action: {
+                        ButtonImage(systemName: .edit, action: {
                             actionEdit(exportable)
                         })
 
