@@ -64,6 +64,15 @@ final class TranslateViewModel: ObservableObject {
         
     }
     
+    private func getFolderName(fromURL url: URL) -> String? {
+        let index: Int = (url.pathComponents.count - 2)
+        guard let path = url.pathComponents.object(index: index) else {
+            return nil
+        }
+        
+        return (path as NSString).deletingPathExtension
+    }
+    
     func importStringLanguage(urls: [URL]?) {
         
         guard let urls = urls else {
@@ -79,7 +88,10 @@ final class TranslateViewModel: ObservableObject {
                 }
                 do {
                     let fullContent: String = try String(contentsOf: url)
-                    let stringFileName: String = (url.lastPathComponent as NSString).deletingPathExtension
+                    guard let stringFileName = self.getFolderName(fromURL: url) else {
+                        return
+                    }
+                    
                     let lines: [String] = fullContent.components(separatedBy: .newlines)
 
                     DispatchQueue.main.async {
@@ -162,8 +174,12 @@ final class TranslateViewModel: ObservableObject {
                 lines.append("\"\(translation.key)\"= \"\(translation.value)\";")
             }
             
+            
+            let folderPath: URL = url.appendingPathComponent("\(language).lproj")
+            createStringsFolder(path: folderPath)
+            
             let content: String = lines.joined(separator: "\n")
-            createStringFile(path: url, fileName: language, content: content)
+            createStringFile(path: folderPath, content: content)
         }
     }
     
@@ -211,9 +227,17 @@ final class TranslateViewModel: ObservableObject {
         return progress > 0
     }
     
-    private func createStringFile(path: URL, fileName: String, content: String) {
+    private func createStringsFolder(path: URL) {
         do {
-            let filePath: URL = path.appendingPathComponent("\(fileName).strings")
+            try FileManager.default.createDirectory(at: path, withIntermediateDirectories: true)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+    }
+    
+    private func createStringFile(path: URL, content: String) {
+        do {
+            let filePath: URL = path.appendingPathComponent("Localizable.strings")
             try content.write(to: filePath, atomically: true, encoding: .utf8)
         } catch {
             fatalError(error.localizedDescription)
