@@ -11,6 +11,8 @@
 		921A9FB62A4E3BDD0069FDA8 /* UTType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A9FB52A4E3BDD0069FDA8 /* UTType+Extensions.swift */; };
 		921A9FB82A4F3AA50069FDA8 /* ExportableLocaleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A9FB72A4F3AA50069FDA8 /* ExportableLocaleDetailView.swift */; };
 		921A9FBA2A4F3B570069FDA8 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A9FB92A4F3B570069FDA8 /* Array+Extensions.swift */; };
+		921A9FCD2A4FA8590069FDA8 /* LProjHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A9FCC2A4FA8590069FDA8 /* LProjHelper.swift */; };
+		921A9FCF2A4FB4850069FDA8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A9FCE2A4FB4850069FDA8 /* String+Extensions.swift */; };
 		924455CF2A4B081B0043C48D /* EasyLocaleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924455CE2A4B081B0043C48D /* EasyLocaleApp.swift */; };
 		924455D12A4B081B0043C48D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924455D02A4B081B0043C48D /* ContentView.swift */; };
 		924455D32A4B081D0043C48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924455D22A4B081D0043C48D /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		921A9FB52A4E3BDD0069FDA8 /* UTType+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UTType+Extensions.swift"; sourceTree = "<group>"; };
 		921A9FB72A4F3AA50069FDA8 /* ExportableLocaleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportableLocaleDetailView.swift; sourceTree = "<group>"; };
 		921A9FB92A4F3B570069FDA8 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		921A9FCC2A4FA8590069FDA8 /* LProjHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LProjHelper.swift; sourceTree = "<group>"; };
+		921A9FCE2A4FB4850069FDA8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		924455CB2A4B081B0043C48D /* EasyLocale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLocale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924455CE2A4B081B0043C48D /* EasyLocaleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLocaleApp.swift; sourceTree = "<group>"; };
 		924455D02A4B081B0043C48D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				921A9FB52A4E3BDD0069FDA8 /* UTType+Extensions.swift */,
 				921A9FB72A4F3AA50069FDA8 /* ExportableLocaleDetailView.swift */,
 				921A9FB92A4F3B570069FDA8 /* Array+Extensions.swift */,
+				921A9FCC2A4FA8590069FDA8 /* LProjHelper.swift */,
+				921A9FCE2A4FB4850069FDA8 /* String+Extensions.swift */,
 			);
 			path = EasyLocale;
 			sourceTree = "<group>";
@@ -306,6 +312,8 @@
 				921A9FB62A4E3BDD0069FDA8 /* UTType+Extensions.swift in Sources */,
 				924456082A4B88980043C48D /* TranslateViewModel.swift in Sources */,
 				921A9FB82A4F3AA50069FDA8 /* ExportableLocaleDetailView.swift in Sources */,
+				921A9FCD2A4FA8590069FDA8 /* LProjHelper.swift in Sources */,
+				921A9FCF2A4FB4850069FDA8 /* String+Extensions.swift in Sources */,
 				921A9FBA2A4F3B570069FDA8 /* Array+Extensions.swift in Sources */,
 				921A9FB02A4DEDD10069FDA8 /* ButtonImage.swift in Sources */,
 				924456132A4B9BEA0043C48D /* ExportableLanguage.swift in Sources */,
