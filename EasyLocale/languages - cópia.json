@@ -1,0 +1,2962 @@
+[
+    {
+        "localeIdentifier": "eu",
+        "description": "Basque"
+    },
+    {
+        "localeIdentifier": "hr_BA",
+        "description": "Croatian (Bosnia & Herzegovina)"
+    },
+    {
+        "localeIdentifier": "en_CM",
+        "description": "English (Cameroon)"
+    },
+    {
+        "localeIdentifier": "en_BI",
+        "description": "English (Burundi)"
+    },
+    {
+        "localeIdentifier": "rw_RW",
+        "description": "Kinyarwanda (Rwanda)"
+    },
+    {
+        "localeIdentifier": "ast",
+        "description": "Asturian"
+    },
+    {
+        "localeIdentifier": "en_SZ",
+        "description": "English (Swaziland)"
+    },
+    {
+        "localeIdentifier": "he_IL",
+        "description": "Hebrew (Israel)"
+    },
+    {
+        "localeIdentifier": "ar",
+        "description": "Arabic"
+    },
+    {
+        "localeIdentifier": "uz_Arab",
+        "description": "Uzbek (Arabic)"
+    },
+    {
+        "localeIdentifier": "en_PN",
+        "description": "English (Pitcairn Islands)"
+    },
+    {
+        "localeIdentifier": "as",
+        "description": "Assamese"
+    },
+    {
+        "localeIdentifier": "en_NF",
+        "description": "English (Norfolk Island)"
+    },
+    {
+        "localeIdentifier": "ks_IN",
+        "description": "Kashmiri (India)"
+    },
+    {
+        "localeIdentifier": "rwk_TZ",
+        "description": "Rwa (Tanzania)"
+    },
+    {
+        "localeIdentifier": "zh_Hant_TW",
+        "description": "Chinese (Traditional, Taiwan)"
+    },
+    {
+        "localeIdentifier": "en_CN",
+        "description": "English (China)"
+    },
+    {
+        "localeIdentifier": "gsw_LI",
+        "description": "Swiss German (Liechtenstein)"
+    },
+    {
+        "localeIdentifier": "ta_IN",
+        "description": "Tamil (India)"
+    },
+    {
+        "localeIdentifier": "th_TH",
+        "description": "Thai (Thailand)"
+    },
+    {
+        "localeIdentifier": "es_EA",
+        "description": "Spanish (Ceuta & Melilla)"
+    },
+    {
+        "localeIdentifier": "fr_GF",
+        "description": "French (French Guiana)"
+    },
+    {
+        "localeIdentifier": "ar_001",
+        "description": "Arabic (World)"
+    },
+    {
+        "localeIdentifier": "en_RW",
+        "description": "English (Rwanda)"
+    },
+    {
+        "localeIdentifier": "tr_TR",
+        "description": "Turkish (Turkey)"
+    },
+    {
+        "localeIdentifier": "de_CH",
+        "description": "German (Switzerland)"
+    },
+    {
+        "localeIdentifier": "ee_TG",
+        "description": "Ewe (Togo)"
+    },
+    {
+        "localeIdentifier": "en_NG",
+        "description": "English (Nigeria)"
+    },
+    {
+        "localeIdentifier": "fr_TG",
+        "description": "French (Togo)"
+    },
+    {
+        "localeIdentifier": "az",
+        "description": "Azerbaijani"
+    },
+    {
+        "localeIdentifier": "fr_SC",
+        "description": "French (Seychelles)"
+    },
+    {
+        "localeIdentifier": "es_HN",
+        "description": "Spanish (Honduras)"
+    },
+    {
+        "localeIdentifier": "en_AG",
+        "description": "English (Antigua & Barbuda)"
+    },
+    {
+        "localeIdentifier": "ru_KZ",
+        "description": "Russian (Kazakhstan)"
+    },
+    {
+        "localeIdentifier": "gsw",
+        "description": "Swiss German"
+    },
+    {
+        "localeIdentifier": "dyo",
+        "description": "Jola-Fonyi"
+    },
+    {
+        "localeIdentifier": "so_ET",
+        "description": "Somali (Ethiopia)"
+    },
+    {
+        "localeIdentifier": "zh_Hant_MO",
+        "description": "Chinese (Traditional, Macau [China])"
+    },
+    {
+        "localeIdentifier": "de_BE",
+        "description": "German (Belgium)"
+    },
+    {
+        "localeIdentifier": "nus_SS",
+        "description": "Nuer (South Sudan)"
+    },
+    {
+        "localeIdentifier": "km_KH",
+        "description": "Khmer (Cambodia)"
+    },
+    {
+        "localeIdentifier": "my_MM",
+        "description": "Burmese (Myanmar [Burma])"
+    },
+    {
+        "localeIdentifier": "mgh_MZ",
+        "description": "Makhuwa-Meetto (Mozambique)"
+    },
+    {
+        "localeIdentifier": "ee_GH",
+        "description": "Ewe (Ghana)"
+    },
+    {
+        "localeIdentifier": "es_EC",
+        "description": "Spanish (Ecuador)"
+    },
+    {
+        "localeIdentifier": "kw_GB",
+        "description": "Cornish (United Kingdom)"
+    },
+    {
+        "localeIdentifier": "rm_CH",
+        "description": "Romansh (Switzerland)"
+    },
+    {
+        "localeIdentifier": "en_ME",
+        "description": "English (Montenegro)"
+    },
+    {
+        "localeIdentifier": "nyn",
+        "description": "Nyankole"
+    },
+    {
+        "localeIdentifier": "mk_MK",
+        "description": "Macedonian (Macedonia)"
+    },
+    {
+        "localeIdentifier": "bs_Cyrl_BA",
+        "description": "Bosnian (Cyrillic, Bosnia & Herzegovina)"
+    },
+    {
+        "localeIdentifier": "ar_MR",
+        "description": "Arabic (Mauritania)"
+    },
+    {
+        "localeIdentifier": "en_BM",
+        "description": "English (Bermuda)"
+    },
+    {
+        "localeIdentifier": "ms_Arab",
+        "description": "Malay (Arabic)"
+    },
+    {
+        "localeIdentifier": "en_AI",
+        "description": "English (Anguilla)"
+    },
+    {
+        "localeIdentifier": "gl_ES",
+        "description": "Galician (Spain)"
+    },
+    {
+        "localeIdentifier": "en_PR",
+        "description": "English (Puerto Rico)"
+    },
+    {
+        "localeIdentifier": "ff_CM",
+        "description": "Fulah (Cameroon)"
+    },
+    {
+        "localeIdentifier": "ne_IN",
+        "description": "Nepali (India)"
+    },
+    {
+        "localeIdentifier": "or_IN",
+        "description": "Oriya (India)"
+    },
+    {
+        "localeIdentifier": "khq_ML",
+        "description": "Koyra Chiini (Mali)"
+    },
+    {
+        "localeIdentifier": "en_MG",
+        "description": "English (Madagascar)"
+    },
+    {
+        "localeIdentifier": "pt_TL",
+        "description": "Portuguese (Timor-Leste)"
+    },
+    {
+        "localeIdentifier": "en_LC",
+        "description": "English (St. Lucia)"
+    },
+    {
+        "localeIdentifier": "ta_SG",
+        "description": "Tamil (Singapore)"
+    },
+    {
+        "localeIdentifier": "iu_CA",
+        "description": "Inuktitut (Canada)"
+    },
+    {
+        "localeIdentifier": "jmc_TZ",
+        "description": "Machame (Tanzania)"
+    },
+    {
+        "localeIdentifier": "om_ET",
+        "description": "Oromo (Ethiopia)"
+    },
+    {
+        "localeIdentifier": "lv_LV",
+        "description": "Latvian (Latvia)"
+    },
+    {
+        "localeIdentifier": "es_US",
+        "description": "Spanish (United States)"
+    },
+    {
+        "localeIdentifier": "en_PT",
+        "description": "English (Portugal)"
+    },
+    {
+        "localeIdentifier": "vai_Latn_LR",
+        "description": "Vai (Latin, Liberia)"
+    },
+    {
+        "localeIdentifier": "yue_HK",
+        "description": "Cantonese (Hong Kong [China])"
+    },
+    {
+        "localeIdentifier": "en_NL",
+        "description": "English (Netherlands)"
+    },
+    {
+        "localeIdentifier": "to_TO",
+        "description": "Tongan (Tonga)"
+    },
+    {
+        "localeIdentifier": "cgg_UG",
+        "description": "Chiga (Uganda)"
+    },
+    {
+        "localeIdentifier": "ta",
+        "description": "Tamil"
+    },
+    {
+        "localeIdentifier": "en_MH",
+        "description": "English (Marshall Islands)"
+    },
+    {
+        "localeIdentifier": "zu_ZA",
+        "description": "Zulu (South Africa)"
+    },
+    {
+        "localeIdentifier": "shi_Latn_MA",
+        "description": "Tachelhit (Latin, Morocco)"
+    },
+    {
+        "localeIdentifier": "brx_IN",
+        "description": "Bodo (India)"
+    },
+    {
+        "localeIdentifier": "ar_KM",
+        "description": "Arabic (Comoros)"
+    },
+    {
+        "localeIdentifier": "en_AL",
+        "description": "English (Albania)"
+    },
+    {
+        "localeIdentifier": "te",
+        "description": "Telugu"
+    },
+    {
+        "localeIdentifier": "chr_US",
+        "description": "Cherokee (United States)"
+    },
+    {
+        "localeIdentifier": "yo_BJ",
+        "description": "Yoruba (Benin)"
+    },
+    {
+        "localeIdentifier": "fr_VU",
+        "description": "French (Vanuatu)"
+    },
+    {
+        "localeIdentifier": "pa",
+        "description": "Punjabi"
+    },
+    {
+        "localeIdentifier": "tg",
+        "description": "Tajik"
+    },
+    {
+        "localeIdentifier": "kea",
+        "description": "Kabuverdianu"
+    },
+    {
+        "localeIdentifier": "ksh_DE",
+        "description": "Colognian (Germany)"
+    },
+    {
+        "localeIdentifier": "sw_CD",
+        "description": "Swahili (Congo - Kinshasa)"
+    },
+    {
+        "localeIdentifier": "te_IN",
+        "description": "Telugu (India)"
+    },
+    {
+        "localeIdentifier": "fr_RE",
+        "description": "French (Réunion)"
+    },
+    {
+        "localeIdentifier": "th",
+        "description": "Thai"
+    },
+    {
+        "localeIdentifier": "ur_IN",
+        "description": "Urdu (India)"
+    },
+    {
+        "localeIdentifier": "yo_NG",
+        "description": "Yoruba (Nigeria)"
+    },
+    {
+        "localeIdentifier": "ti",
+        "description": "Tigrinya"
+    },
+    {
+        "localeIdentifier": "guz_KE",
+        "description": "Gusii (Kenya)"
+    },
+    {
+        "localeIdentifier": "tk",
+        "description": "Turkmen"
+    },
+    {
+        "localeIdentifier": "kl_GL",
+        "description": "Kalaallisut (Greenland)"
+    },
+    {
+        "localeIdentifier": "ksf_CM",
+        "description": "Bafia (Cameroon)"
+    },
+    {
+        "localeIdentifier": "mua_CM",
+        "description": "Mundang (Cameroon)"
+    },
+    {
+        "localeIdentifier": "lag_TZ",
+        "description": "Langi (Tanzania)"
+    },
+    {
+        "localeIdentifier": "lb",
+        "description": "Luxembourgish"
+    },
+    {
+        "localeIdentifier": "fr_TN",
+        "description": "French (Tunisia)"
+    },
+    {
+        "localeIdentifier": "es_PA",
+        "description": "Spanish (Panama)"
+    },
+    {
+        "localeIdentifier": "pl_PL",
+        "description": "Polish (Poland)"
+    },
+    {
+        "localeIdentifier": "to",
+        "description": "Tongan"
+    },
+    {
+        "localeIdentifier": "hi_IN",
+        "description": "Hindi (India)"
+    },
+    {
+        "localeIdentifier": "dje_NE",
+        "description": "Zarma (Niger)"
+    },
+    {
+        "localeIdentifier": "es_GQ",
+        "description": "Spanish (Equatorial Guinea)"
+    },
+    {
+        "localeIdentifier": "en_BR",
+        "description": "English (Brazil)"
+    },
+    {
+        "localeIdentifier": "kok_IN",
+        "description": "Konkani (India)"
+    },
+    {
+        "localeIdentifier": "pl",
+        "description": "Polish"
+    },
+    {
+        "localeIdentifier": "fr_GN",
+        "description": "French (Guinea)"
+    },
+    {
+        "localeIdentifier": "bem",
+        "description": "Bemba"
+    },
+    {
+        "localeIdentifier": "ha",
+        "description": "Hausa"
+    },
+    {
+        "localeIdentifier": "ckb",
+        "description": "Central Kurdish"
+    },
+    {
+        "localeIdentifier": "lg",
+        "description": "Ganda"
+    },
+    {
+        "localeIdentifier": "tr",
+        "description": "Turkish"
+    },
+    {
+        "localeIdentifier": "en_PW",
+        "description": "English (Palau)"
+    },
+    {
+        "localeIdentifier": "en_NO",
+        "description": "English (Norway)"
+    },
+    {
+        "localeIdentifier": "nyn_UG",
+        "description": "Nyankole (Uganda)"
+    },
+    {
+        "localeIdentifier": "sr_Latn_RS",
+        "description": "Serbian (Latin, Serbia)"
+    },
+    {
+        "localeIdentifier": "gsw_FR",
+        "description": "Swiss German (France)"
+    },
+    {
+        "localeIdentifier": "pa_Guru",
+        "description": "Punjabi (Gurmukhi)"
+    },
+    {
+        "localeIdentifier": "he",
+        "description": "Hebrew"
+    },
+    {
+        "localeIdentifier": "sn_ZW",
+        "description": "Shona (Zimbabwe)"
+    },
+    {
+        "localeIdentifier": "qu_BO",
+        "description": "Quechua (Bolivia)"
+    },
+    {
+        "localeIdentifier": "lu_CD",
+        "description": "Luba-Katanga (Congo - Kinshasa)"
+    },
+    {
+        "localeIdentifier": "mgo_CM",
+        "description": "Metaʼ (Cameroon)"
+    },
+    {
+        "localeIdentifier": "ps_AF",
+        "description": "Pashto (Afghanistan)"
+    },
+    {
+        "localeIdentifier": "en_BS",
+        "description": "English (Bahamas)"
+    },
+    {
+        "localeIdentifier": "da",
+        "description": "Danish"
+    },
+    {
+        "localeIdentifier": "ps",
+        "description": "Pashto"
+    },
+    {
+        "localeIdentifier": "ln",
+        "description": "Lingala"
+    },
+    {
+        "localeIdentifier": "pt",
+        "description": "Portuguese"
+    },
+    {
+        "localeIdentifier": "hi",
+        "description": "Hindi"
+    },
+    {
+        "localeIdentifier": "lo",
+        "description": "Lao"
+    },
+    {
+        "localeIdentifier": "ebu",
+        "description": "Embu"
+    },
+    {
+        "localeIdentifier": "de",
+        "description": "German"
+    },
+    {
+        "localeIdentifier": "gu_IN",
+        "description": "Gujarati (India)"
+    },
+    {
+        "localeIdentifier": "seh",
+        "description": "Sena"
+    },
+    {
+        "localeIdentifier": "en_CX",
+        "description": "English (Christmas Island)"
+    },
+    {
+        "localeIdentifier": "en_ZM",
+        "description": "English (Zambia)"
+    },
+    {
+        "localeIdentifier": "fr_HT",
+        "description": "French (Haiti)"
+    },
+    {
+        "localeIdentifier": "fr_GP",
+        "description": "French (Guadeloupe)"
+    },
+    {
+        "localeIdentifier": "lt",
+        "description": "Lithuanian"
+    },
+    {
+        "localeIdentifier": "lu",
+        "description": "Luba-Katanga"
+    },
+    {
+        "localeIdentifier": "ln_CD",
+        "description": "Lingala (Congo - Kinshasa)"
+    },
+    {
+        "localeIdentifier": "vai_Latn",
+        "description": "Vai (Latin)"
+    },
+    {
+        "localeIdentifier": "el_GR",
+        "description": "Greek (Greece)"
+    },
+    {
+        "localeIdentifier": "lv",
+        "description": "Latvian"
+    },
+    {
+        "localeIdentifier": "en_KE",
+        "description": "English (Kenya)"
+    },
+    {
+        "localeIdentifier": "sbp",
+        "description": "Sangu"
+    },
+    {
+        "localeIdentifier": "hr",
+        "description": "Croatian"
+    },
+    {
+        "localeIdentifier": "en_CY",
+        "description": "English (Cyprus)"
+    },
+    {
+        "localeIdentifier": "es_GT",
+        "description": "Spanish (Guatemala)"
+    },
+    {
+        "localeIdentifier": "twq_NE",
+        "description": "Tasawaq (Niger)"
+    },
+    {
+        "localeIdentifier": "zh_Hant_HK",
+        "description": "Chinese (Traditional, Hong Kong [China])"
+    },
+    {
+        "localeIdentifier": "kln_KE",
+        "description": "Kalenjin (Kenya)"
+    },
+    {
+        "localeIdentifier": "fr_GQ",
+        "description": "French (Equatorial Guinea)"
+    },
+    {
+        "localeIdentifier": "chr",
+        "description": "Cherokee"
+    },
+    {
+        "localeIdentifier": "hu",
+        "description": "Hungarian"
+    },
+    {
+        "localeIdentifier": "es_UY",
+        "description": "Spanish (Uruguay)"
+    },
+    {
+        "localeIdentifier": "fr_CA",
+        "description": "French (Canada)"
+    },
+    {
+        "localeIdentifier": "ms_BN",
+        "description": "Malay (Brunei)"
+    },
+    {
+        "localeIdentifier": "en_NR",
+        "description": "English (Nauru)"
+    },
+    {
+        "localeIdentifier": "mer",
+        "description": "Meru"
+    },
+    {
+        "localeIdentifier": "shi",
+        "description": "Tachelhit"
+    },
+    {
+        "localeIdentifier": "es_PE",
+        "description": "Spanish (Peru)"
+    },
+    {
+        "localeIdentifier": "fr_SN",
+        "description": "French (Senegal)"
+    },
+    {
+        "localeIdentifier": "bez",
+        "description": "Bena"
+    },
+    {
+        "localeIdentifier": "sw_TZ",
+        "description": "Swahili (Tanzania)"
+    },
+    {
+        "localeIdentifier": "wae_CH",
+        "description": "Walser (Switzerland)"
+    },
+    {
+        "localeIdentifier": "kkj",
+        "description": "Kako"
+    },
+    {
+        "localeIdentifier": "hy",
+        "description": "Armenian"
+    },
+    {
+        "localeIdentifier": "teo_KE",
+        "description": "Teso (Kenya)"
+    },
+    {
+        "localeIdentifier": "en_CZ",
+        "description": "English (Czech Republic)"
+    },
+    {
+        "localeIdentifier": "dz_BT",
+        "description": "Dzongkha (Bhutan)"
+    },
+    {
+        "localeIdentifier": "teo",
+        "description": "Teso"
+    },
+    {
+        "localeIdentifier": "ar_JO",
+        "description": "Arabic (Jordan)"
+    },
+    {
+        "localeIdentifier": "mer_KE",
+        "description": "Meru (Kenya)"
+    },
+    {
+        "localeIdentifier": "khq",
+        "description": "Koyra Chiini"
+    },
+    {
+        "localeIdentifier": "ln_CF",
+        "description": "Lingala (Central African Republic)"
+    },
+    {
+        "localeIdentifier": "nn_NO",
+        "description": "Norwegian Nynorsk (Norway)"
+    },
+    {
+        "localeIdentifier": "en_MO",
+        "description": "English (Macau [China])"
+    },
+    {
+        "localeIdentifier": "ar_TD",
+        "description": "Arabic (Chad)"
+    },
+    {
+        "localeIdentifier": "dz",
+        "description": "Dzongkha"
+    },
+    {
+        "localeIdentifier": "ses",
+        "description": "Koyraboro Senni"
+    },
+    {
+        "localeIdentifier": "en_BW",
+        "description": "English (Botswana)"
+    },
+    {
+        "localeIdentifier": "en_AS",
+        "description": "English (American Samoa)"
+    },
+    {
+        "localeIdentifier": "ar_IL",
+        "description": "Arabic (Israel)"
+    },
+    {
+        "localeIdentifier": "nnh",
+        "description": "Ngiemboon"
+    },
+    {
+        "localeIdentifier": "bo_CN",
+        "description": "Tibetan (China)"
+    },
+    {
+        "localeIdentifier": "teo_UG",
+        "description": "Teso (Uganda)"
+    },
+    {
+        "localeIdentifier": "hy_AM",
+        "description": "Armenian (Armenia)"
+    },
+    {
+        "localeIdentifier": "ln_CG",
+        "description": "Lingala (Congo - Brazzaville)"
+    },
+    {
+        "localeIdentifier": "sr_Latn_BA",
+        "description": "Serbian (Latin, Bosnia & Herzegovina)"
+    },
+    {
+        "localeIdentifier": "en_MP",
+        "description": "English (Northern Mariana Islands)"
+    },
+    {
+        "localeIdentifier": "ksb_TZ",
+        "description": "Shambala (Tanzania)"
+    },
+    {
+        "localeIdentifier": "ar_SA",
+        "description": "Arabic (Saudi Arabia)"
+    },
+    {
+        "localeIdentifier": "smn_FI",
+        "description": "Inari Sami (Finland)"
+    },
+    {
+        "localeIdentifier": "ar_LY",
+        "description": "Arabic (Libya)"
+    },
+    {
+        "localeIdentifier": "en_AT",
+        "description": "English (Austria)"
+    },
+    {
+        "localeIdentifier": "so_KE",
+        "description": "Somali (Kenya)"
+    },
+    {
+        "localeIdentifier": "fr_CD",
+        "description": "French (Congo - Kinshasa)"
+    },
+    {
+        "localeIdentifier": "af_NA",
+        "description": "Afrikaans (Namibia)"
+    },
+    {
+        "localeIdentifier": "en_NU",
+        "description": "English (Niue)"
+    },
+    {
+        "localeIdentifier": "es_PH",
+        "description": "Spanish (Philippines)"
+    },
+    {
+        "localeIdentifier": "en_KI",
+        "description": "English (Kiribati)"
+    },
+    {
+        "localeIdentifier": "en_JE",
+        "description": "English (Jersey)"
+    },
+    {
+        "localeIdentifier": "lkt",
+        "description": "Lakota"
+    },
+    {
+        "localeIdentifier": "en_AU",
+        "description": "English (Australia)"
+    },
+    {
+        "localeIdentifier": "fa_IR",
+        "description": "Persian (Iran)"
+    },
+    {
+        "localeIdentifier": "uz_Latn_UZ",
+        "description": "Uzbek (Latin, Uzbekistan)"
+    },
+    {
+        "localeIdentifier": "zh_Hans_CN",
+        "description": "Chinese (Simplified, China)"
+    },
+    {
+        "localeIdentifier": "ewo_CM",
+        "description": "Ewondo (Cameroon)"
+    },
+    {
+        "localeIdentifier": "fr_PF",
+        "description": "French (French Polynesia)"
+    },
+    {
+        "localeIdentifier": "ca_IT",
+        "description": "Catalan (Italy)"
+    },
+    {
+        "localeIdentifier": "en_BZ",
+        "description": "English (Belize)"
+    },
+    {
+        "localeIdentifier": "ar_KW",
+        "description": "Arabic (Kuwait)"
+    },
+    {
+        "localeIdentifier": "pt_GW",
+        "description": "Portuguese (Guinea-Bissau)"
+    },
+    {
+        "localeIdentifier": "fr_FR",
+        "description": "French (France)"
+    },
+    {
+        "localeIdentifier": "am_ET",
+        "description": "Amharic (Ethiopia)"
+    },
+    {
+        "localeIdentifier": "en_VC",
+        "description": "English (St. Vincent & Grenadines)"
+    },
+    {
+        "localeIdentifier": "fr_DJ",
+        "description": "French (Djibouti)"
+    },
+    {
+        "localeIdentifier": "fr_CF",
+        "description": "French (Central African Republic)"
+    },
+    {
+        "localeIdentifier": "es_SV",
+        "description": "Spanish (El Salvador)"
+    },
+    {
+        "localeIdentifier": "en_MS",
+        "description": "English (Montserrat)"
+    },
+    {
+        "localeIdentifier": "pt_ST",
+        "description": "Portuguese (São Tomé & Príncipe)"
+    },
+    {
+        "localeIdentifier": "ar_SD",
+        "description": "Arabic (Sudan)"
+    },
+    {
+        "localeIdentifier": "luy_KE",
+        "description": "Luyia (Kenya)"
+    },
+    {
+        "localeIdentifier": "gd_GB",
+        "description": "Scottish Gaelic (United Kingdom)"
+    },
+    {
+        "localeIdentifier": "de_LI",
+        "description": "German (Liechtenstein)"
+    },
+    {
+        "localeIdentifier": "fr_CG",
+        "description": "French (Congo - Brazzaville)"
+    },
+    {
+        "localeIdentifier": "ckb_IQ",
+        "description": "Central Kurdish (Iraq)"
+    },
+    {
+        "localeIdentifier": "zh_Hans_SG",
+        "description": "Chinese (Simplified, Singapore)"
+    },
+    {
+        "localeIdentifier": "en_MT",
+        "description": "English (Malta)"
+    },
+    {
+        "localeIdentifier": "ha_NE",
+        "description": "Hausa (Niger)"
+    },
+    {
+        "localeIdentifier": "ewo",
+        "description": "Ewondo"
+    },
+    {
+        "localeIdentifier": "af_ZA",
+        "description": "Afrikaans (South Africa)"
+    },
+    {
+        "localeIdentifier": "os_GE",
+        "description": "Ossetic (Georgia)"
+    },
+    {
+        "localeIdentifier": "om_KE",
+        "description": "Oromo (Kenya)"
+    },
+    {
+        "localeIdentifier": "nl_SR",
+        "description": "Dutch (Suriname)"
+    },
+    {
+        "localeIdentifier": "es_ES",
+        "description": "Spanish (Spain)"
+    },
+    {
+        "localeIdentifier": "es_DO",
+        "description": "Spanish (Dominican Republic)"
+    },
+    {
+        "localeIdentifier": "ar_IQ",
+        "description": "Arabic (Iraq)"
+    },
+    {
+        "localeIdentifier": "fr_CH",
+        "description": "French (Switzerland)"
+    },
+    {
+        "localeIdentifier": "nnh_CM",
+        "description": "Ngiemboon (Cameroon)"
+    },
+    {
+        "localeIdentifier": "es_419",
+        "description": "Spanish (Latin America)"
+    },
+    {
+        "localeIdentifier": "en_MU",
+        "description": "English (Mauritius)"
+    },
+    {
+        "localeIdentifier": "en_US_POSIX",
+        "description": "English (United States, Computer)"
+    },
+    {
+        "localeIdentifier": "yav_CM",
+        "description": "Yangben (Cameroon)"
+    },
+    {
+        "localeIdentifier": "luo_KE",
+        "description": "Luo (Kenya)"
+    },
+    {
+        "localeIdentifier": "dua_CM",
+        "description": "Duala (Cameroon)"
+    },
+    {
+        "localeIdentifier": "et_EE",
+        "description": "Estonian (Estonia)"
+    },
+    {
+        "localeIdentifier": "en_IE",
+        "description": "English (Ireland)"
+    },
+    {
+        "localeIdentifier": "ak_GH",
+        "description": "Akan (Ghana)"
+    },
+    {
+        "localeIdentifier": "rwk",
+        "description": "Rwa"
+    },
+    {
+        "localeIdentifier": "es_CL",
+        "description": "Spanish (Chile)"
+    },
+    {
+        "localeIdentifier": "kea_CV",
+        "description": "Kabuverdianu (Cape Verde)"
+    },
+    {
+        "localeIdentifier": "fr_CI",
+        "description": "French (Côte d’Ivoire)"
+    },
+    {
+        "localeIdentifier": "ckb_IR",
+        "description": "Central Kurdish (Iran)"
+    },
+    {
+        "localeIdentifier": "fr_BE",
+        "description": "French (Belgium)"
+    },
+    {
+        "localeIdentifier": "se",
+        "description": "Northern Sami"
+    },
+    {
+        "localeIdentifier": "en_NZ",
+        "description": "English (New Zealand)"
+    },
+    {
+        "localeIdentifier": "en_MV",
+        "description": "English (Maldives)"
+    },
+    {
+        "localeIdentifier": "en_LR",
+        "description": "English (Liberia)"
+    },
+    {
+        "localeIdentifier": "ha_NG",
+        "description": "Hausa (Nigeria)"
+    },
+    {
+        "localeIdentifier": "en_KN",
+        "description": "English (St. Kitts & Nevis)"
+    },
+    {
+        "localeIdentifier": "nb_SJ",
+        "description": "Norwegian Bokmål (Svalbard & Jan Mayen)"
+    },
+    {
+        "localeIdentifier": "sg",
+        "description": "Sango"
+    },
+    {
+        "localeIdentifier": "sr_Cyrl_RS",
+        "description": "Serbian (Cyrillic, Serbia)"
+    },
+    {
+        "localeIdentifier": "ru_RU",
+        "description": "Russian (Russia)"
+    },
+    {
+        "localeIdentifier": "en_ZW",
+        "description": "English (Zimbabwe)"
+    },
+    {
+        "localeIdentifier": "sv_AX",
+        "description": "Swedish (Åland Islands)"
+    },
+    {
+        "localeIdentifier": "si",
+        "description": "Sinhala"
+    },
+    {
+        "localeIdentifier": "ga_IE",
+        "description": "Irish (Ireland)"
+    },
+    {
+        "localeIdentifier": "en_VG",
+        "description": "English (British Virgin Islands)"
+    },
+    {
+        "localeIdentifier": "ff_MR",
+        "description": "Fulah (Mauritania)"
+    },
+    {
+        "localeIdentifier": "sk",
+        "description": "Slovak"
+    },
+    {
+        "localeIdentifier": "ky_KG",
+        "description": "Kyrgyz (Kyrgyzstan)"
+    },
+    {
+        "localeIdentifier": "agq_CM",
+        "description": "Aghem (Cameroon)"
+    },
+    {
+        "localeIdentifier": "mzn",
+        "description": "Mazanderani"
+    },
+    {
+        "localeIdentifier": "fr_BF",
+        "description": "French (Burkina Faso)"
+    },
+    {
+        "localeIdentifier": "sl",
+        "description": "Slovenian"
+    },
+    {
+        "localeIdentifier": "en_MW",
+        "description": "English (Malawi)"
+    },
+    {
+        "localeIdentifier": "mr_IN",
+        "description": "Marathi (India)"
+    },
+    {
+        "localeIdentifier": "az_Latn",
+        "description": "Azerbaijani (Latin)"
+    },
+    {
+        "localeIdentifier": "en_LS",
+        "description": "English (Lesotho)"
+    },
+    {
+        "localeIdentifier": "de_AT",
+        "description": "German (Austria)"
+    },
+    {
+        "localeIdentifier": "ka",
+        "description": "Georgian"
+    },
+    {
+        "localeIdentifier": "naq_NA",
+        "description": "Nama (Namibia)"
+    },
+    {
+        "localeIdentifier": "sn",
+        "description": "Shona"
+    },
+    {
+        "localeIdentifier": "sr_Latn_ME",
+        "description": "Serbian (Latin, Montenegro)"
+    },
+    {
+        "localeIdentifier": "fr_NC",
+        "description": "French (New Caledonia)"
+    },
+    {
+        "localeIdentifier": "so",
+        "description": "Somali"
+    },
+    {
+        "localeIdentifier": "is_IS",
+        "description": "Icelandic (Iceland)"
+    },
+    {
+        "localeIdentifier": "twq",
+        "description": "Tasawaq"
+    },
+    {
+        "localeIdentifier": "ig_NG",
+        "description": "Igbo (Nigeria)"
+    },
+    {
+        "localeIdentifier": "sq",
+        "description": "Albanian"
+    },
+    {
+        "localeIdentifier": "fo_FO",
+        "description": "Faroese (Faroe Islands)"
+    },
+    {
+        "localeIdentifier": "sr",
+        "description": "Serbian"
+    },
+    {
+        "localeIdentifier": "tzm",
+        "description": "Central Atlas Tamazight"
+    },
+    {
+        "localeIdentifier": "ga",
+        "description": "Irish"
+    },
+    {
+        "localeIdentifier": "om",
+        "description": "Oromo"
+    },
+    {
+        "localeIdentifier": "en_LT",
+        "description": "English (Lithuania)"
+    },
+    {
+        "localeIdentifier": "bas_CM",
+        "description": "Basaa (Cameroon)"
+    },
+    {
+        "localeIdentifier": "se_NO",
+        "description": "Northern Sami (Norway)"
+    },
+    {
+        "localeIdentifier": "ki",
+        "description": "Kikuyu"
+    },
+    {
+        "localeIdentifier": "nl_BE",
+        "description": "Dutch (Belgium)"
+    },
+    {
+        "localeIdentifier": "ar_QA",
+        "description": "Arabic (Qatar)"
+    },
+    {
+        "localeIdentifier": "gd",
+        "description": "Scottish Gaelic"
+    },
+    {
+        "localeIdentifier": "sv",
+        "description": "Swedish"
+    },
+    {
+        "localeIdentifier": "kk",
+        "description": "Kazakh"
+    },
+    {
+        "localeIdentifier": "sw",
+        "description": "Swahili"
+    },
+    {
+        "localeIdentifier": "es_CO",
+        "description": "Spanish (Colombia)"
+    },
+    {
+        "localeIdentifier": "az_Latn_AZ",
+        "description": "Azerbaijani (Latin, Azerbaijan)"
+    },
+    {
+        "localeIdentifier": "rn_BI",
+        "description": "Rundi (Burundi)"
+    },
+    {
+        "localeIdentifier": "or",
+        "description": "Oriya"
+    },
+    {
+        "localeIdentifier": "kl",
+        "description": "Kalaallisut"
+    },
+    {
+        "localeIdentifier": "ca",
+        "description": "Catalan"
+    },
+    {
+        "localeIdentifier": "en_VI",
+        "description": "English (U.S. Virgin Islands)"
+    },
+    {
+        "localeIdentifier": "km",
+        "description": "Khmer"
+    },
+    {
+        "localeIdentifier": "os",
+        "description": "Ossetic"
+    },
+    {
+        "localeIdentifier": "en_MY",
+        "description": "English (Malaysia)"
+    },
+    {
+        "localeIdentifier": "kn",
+        "description": "Kannada"
+    },
+    {
+        "localeIdentifier": "en_LU",
+        "description": "English (Luxembourg)"
+    },
+    {
+        "localeIdentifier": "fr_SY",
+        "description": "French (Syria)"
+    },
+    {
+        "localeIdentifier": "ar_TN",
+        "description": "Arabic (Tunisia)"
+    },
+    {
+        "localeIdentifier": "en_JM",
+        "description": "English (Jamaica)"
+    },
+    {
+        "localeIdentifier": "fr_PM",
+        "description": "French (St. Pierre & Miquelon)"
+    },
+    {
+        "localeIdentifier": "ko",
+        "description": "Korean"
+    },
+    {
+        "localeIdentifier": "fr_NE",
+        "description": "French (Niger)"
+    },
+    {
+        "localeIdentifier": "ce",
+        "description": "Chechen"
+    },
+    {
+        "localeIdentifier": "fr_MA",
+        "description": "French (Morocco)"
+    },
+    {
+        "localeIdentifier": "gl",
+        "description": "Galician"
+    },
+    {
+        "localeIdentifier": "ru_MD",
+        "description": "Russian (Moldova)"
+    },
+    {
+        "localeIdentifier": "saq_KE",
+        "description": "Samburu (Kenya)"
+    },
+    {
+        "localeIdentifier": "ks",
+        "description": "Kashmiri"
+    },
+    {
+        "localeIdentifier": "fr_CM",
+        "description": "French (Cameroon)"
+    },
+    {
+        "localeIdentifier": "lb_LU",
+        "description": "Luxembourgish (Luxembourg)"
+    },
+    {
+        "localeIdentifier": "gv_IM",
+        "description": "Manx (Isle of Man)"
+    },
+    {
+        "localeIdentifier": "fr_BI",
+        "description": "French (Burundi)"
+    },
+    {
+        "localeIdentifier": "en_LV",
+        "description": "English (Latvia)"
+    },
+    {
+        "localeIdentifier": "en_KR",
+        "description": "English (South Korea)"
+    },
+    {
+        "localeIdentifier": "es_NI",
+        "description": "Spanish (Nicaragua)"
+    },
+    {
+        "localeIdentifier": "en_GB",
+        "description": "English (United Kingdom)"
+    },
+    {
+        "localeIdentifier": "kw",
+        "description": "Cornish"
+    },
+    {
+        "localeIdentifier": "nl_SX",
+        "description": "Dutch (Sint Maarten)"
+    },
+    {
+        "localeIdentifier": "dav_KE",
+        "description": "Taita (Kenya)"
+    },
+    {
+        "localeIdentifier": "tr_CY",
+        "description": "Turkish (Cyprus)"
+    },
+    {
+        "localeIdentifier": "ky",
+        "description": "Kyrgyz"
+    },
+    {
+        "localeIdentifier": "en_UG",
+        "description": "English (Uganda)"
+    },
+    {
+        "localeIdentifier": "en_TC",
+        "description": "English (Turks & Caicos Islands)"
+    },
+    {
+        "localeIdentifier": "ar_EG",
+        "description": "Arabic (Egypt)"
+    },
+    {
+        "localeIdentifier": "fr_BJ",
+        "description": "French (Benin)"
+    },
+    {
+        "localeIdentifier": "gu",
+        "description": "Gujarati"
+    },
+    {
+        "localeIdentifier": "es_PR",
+        "description": "Spanish (Puerto Rico)"
+    },
+    {
+        "localeIdentifier": "fr_RW",
+        "description": "French (Rwanda)"
+    },
+    {
+        "localeIdentifier": "sr_Cyrl_BA",
+        "description": "Serbian (Cyrillic, Bosnia & Herzegovina)"
+    },
+    {
+        "localeIdentifier": "lrc_IQ",
+        "description": "Northern Luri (Iraq)"
+    },
+    {
+        "localeIdentifier": "gv",
+        "description": "Manx"
+    },
+    {
+        "localeIdentifier": "fr_MC",
+        "description": "French (Monaco)"
+    },
+    {
+        "localeIdentifier": "cs",
+        "description": "Czech"
+    },
+    {
+        "localeIdentifier": "bez_TZ",
+        "description": "Bena (Tanzania)"
+    },
+    {
+        "localeIdentifier": "es_CR",
+        "description": "Spanish (Costa Rica)"
+    },
+    {
+        "localeIdentifier": "asa_TZ",
+        "description": "Asu (Tanzania)"
+    },
+    {
+        "localeIdentifier": "ar_EH",
+        "description": "Arabic (Western Sahara)"
+    },
+    {
+        "localeIdentifier": "fo_DK",
+        "description": "Faroese (Denmark)"
+    },
+    {
+        "localeIdentifier": "ms_Arab_BN",
+        "description": "Malay (Arabic, Brunei)"
+    },
+    {
+        "localeIdentifier": "en_JP",
+        "description": "English (Japan)"
+    },
+    {
+        "localeIdentifier": "sbp_TZ",
+        "description": "Sangu (Tanzania)"
+    },
+    {
+        "localeIdentifier": "en_IL",
+        "description": "English (Israel)"
+    },
+    {
+        "localeIdentifier": "lt_LT",
+        "description": "Lithuanian (Lithuania)"
+    },
+    {
+        "localeIdentifier": "mfe",
+        "description": "Morisyen"
+    },
+    {
+        "localeIdentifier": "en_GD",
+        "description": "English (Grenada)"
+    },
+    {
+        "localeIdentifier": "cy",
+        "description": "Welsh"
+    },
+    {
+        "localeIdentifier": "ug_CN",
+        "description": "Uyghur (China)"
+    },
+    {
+        "localeIdentifier": "ca_FR",
+        "description": "Catalan (France)"
+    },
+    {
+        "localeIdentifier": "es_BO",
+        "description": "Spanish (Bolivia)"
+    },
+    {
+        "localeIdentifier": "fr_BL",
+        "description": "French (St. Barthélemy)"
+    },
+    {
+        "localeIdentifier": "bn_IN",
+        "description": "Bengali (India)"
+    },
+    {
+        "localeIdentifier": "uz_Cyrl_UZ",
+        "description": "Uzbek (Cyrillic, Uzbekistan)"
+    },
+    {
+        "localeIdentifier": "lrc_IR",
+        "description": "Northern Luri (Iran)"
+    },
+    {
+        "localeIdentifier": "az_Cyrl",
+        "description": "Azerbaijani (Cyrillic)"
+    },
+    {
+        "localeIdentifier": "en_IM",
+        "description": "English (Isle of Man)"
+    },
+    {
+        "localeIdentifier": "sw_KE",
+        "description": "Swahili (Kenya)"
+    },
+    {
+        "localeIdentifier": "en_SB",
+        "description": "English (Solomon Islands)"
+    },
+    {
+        "localeIdentifier": "pa_Arab",
+        "description": "Punjabi (Arabic)"
+    },
+    {
+        "localeIdentifier": "ur_PK",
+        "description": "Urdu (Pakistan)"
+    },
+    {
+        "localeIdentifier": "haw_US",
+        "description": "Hawaiian (United States)"
+    },
+    {
+        "localeIdentifier": "ar_SO",
+        "description": "Arabic (Somalia)"
+    },
+    {
+        "localeIdentifier": "en_IN",
+        "description": "English (India)"
+    },
+    {
+        "localeIdentifier": "fil",
+        "description": "Filipino"
+    },
+    {
+        "localeIdentifier": "fr_MF",
+        "description": "French (St. Martin)"
+    },
+    {
+        "localeIdentifier": "en_WS",
+        "description": "English (Samoa)"
+    },
+    {
+        "localeIdentifier": "es_CU",
+        "description": "Spanish (Cuba)"
+    },
+    {
+        "localeIdentifier": "ja_JP",
+        "description": "Japanese (Japan)"
+    },
+    {
+        "localeIdentifier": "fy_NL",
+        "description": "Western Frisian (Netherlands)"
+    },
+    {
+        "localeIdentifier": "en_SC",
+        "description": "English (Seychelles)"
+    },
+    {
+        "localeIdentifier": "en_IO",
+        "description": "English (British Indian Ocean Territory)"
+    },
+    {
+        "localeIdentifier": "pt_PT",
+        "description": "Portuguese (Portugal)"
+    },
+    {
+        "localeIdentifier": "en_HK",
+        "description": "English (Hong Kong [China])"
+    },
+    {
+        "localeIdentifier": "en_GG",
+        "description": "English (Guernsey)"
+    },
+    {
+        "localeIdentifier": "fr_MG",
+        "description": "French (Madagascar)"
+    },
+    {
+        "localeIdentifier": "de_LU",
+        "description": "German (Luxembourg)"
+    },
+    {
+        "localeIdentifier": "tzm_MA",
+        "description": "Central Atlas Tamazight (Morocco)"
+    },
+    {
+        "localeIdentifier": "en_SD",
+        "description": "English (Sudan)"
+    },
+    {
+        "localeIdentifier": "shi_Tfng",
+        "description": "Tachelhit (Tifinagh)"
+    },
+    {
+        "localeIdentifier": "ln_AO",
+        "description": "Lingala (Angola)"
+    },
+    {
+        "localeIdentifier": "as_IN",
+        "description": "Assamese (India)"
+    },
+    {
+        "localeIdentifier": "en_GH",
+        "description": "English (Ghana)"
+    },
+    {
+        "localeIdentifier": "ms_MY",
+        "description": "Malay (Malaysia)"
+    },
+    {
+        "localeIdentifier": "ro_RO",
+        "description": "Romanian (Romania)"
+    },
+    {
+        "localeIdentifier": "jgo_CM",
+        "description": "Ngomba (Cameroon)"
+    },
+    {
+        "localeIdentifier": "dua",
+        "description": "Duala"
+    },
+    {
+        "localeIdentifier": "en_UM",
+        "description": "English (U.S. Outlying Islands)"
+    },
+    {
+        "localeIdentifier": "en_SE",
+        "description": "English (Sweden)"
+    },
+    {
+        "localeIdentifier": "kn_IN",
+        "description": "Kannada (India)"
+    },
+    {
+        "localeIdentifier": "en_KY",
+        "description": "English (Cayman Islands)"
+    },
+    {
+        "localeIdentifier": "vun_TZ",
+        "description": "Vunjo (Tanzania)"
+    },
+    {
+        "localeIdentifier": "kln",
+        "description": "Kalenjin"
+    },
+    {
+        "localeIdentifier": "lrc",
+        "description": "Northern Luri"
+    },
+    {
+        "localeIdentifier": "en_GI",
+        "description": "English (Gibraltar)"
+    },
+    {
+        "localeIdentifier": "ca_ES",
+        "description": "Catalan (Spain)"
+    },
+    {
+        "localeIdentifier": "rof",
+        "description": "Rombo"
+    },
+    {
+        "localeIdentifier": "pt_CV",
+        "description": "Portuguese (Cape Verde)"
+    },
+    {
+        "localeIdentifier": "kok",
+        "description": "Konkani"
+    },
+    {
+        "localeIdentifier": "pt_BR",
+        "description": "Portuguese (Brazil)"
+    },
+    {
+        "localeIdentifier": "ar_DJ",
+        "description": "Arabic (Djibouti)"
+    },
+    {
+        "localeIdentifier": "yi_001",
+        "description": "Yiddish (World)"
+    },
+    {
+        "localeIdentifier": "fi_FI",
+        "description": "Finnish (Finland)"
+    },
+    {
+        "localeIdentifier": "zh",
+        "description": "Chinese"
+    },
+    {
+        "localeIdentifier": "es_PY",
+        "description": "Spanish (Paraguay)"
+    },
+    {
+        "localeIdentifier": "ar_SS",
+        "description": "Arabic (South Sudan)"
+    },
+    {
+        "localeIdentifier": "mua",
+        "description": "Mundang"
+    },
+    {
+        "localeIdentifier": "sr_Cyrl_ME",
+        "description": "Serbian (Cyrillic, Montenegro)"
+    },
+    {
+        "localeIdentifier": "vai_Vaii_LR",
+        "description": "Vai (Vai, Liberia)"
+    },
+    {
+        "localeIdentifier": "en_001",
+        "description": "English (World)"
+    },
+    {
+        "localeIdentifier": "nl_NL",
+        "description": "Dutch (Netherlands)"
+    },
+    {
+        "localeIdentifier": "en_TK",
+        "description": "English (Tokelau)"
+    },
+    {
+        "localeIdentifier": "si_LK",
+        "description": "Sinhala (Sri Lanka)"
+    },
+    {
+        "localeIdentifier": "en_SG",
+        "description": "English (Singapore)"
+    },
+    {
+        "localeIdentifier": "sv_SE",
+        "description": "Swedish (Sweden)"
+    },
+    {
+        "localeIdentifier": "fr_DZ",
+        "description": "French (Algeria)"
+    },
+    {
+        "localeIdentifier": "ca_AD",
+        "description": "Catalan (Andorra)"
+    },
+    {
+        "localeIdentifier": "pt_AO",
+        "description": "Portuguese (Angola)"
+    },
+    {
+        "localeIdentifier": "vi",
+        "description": "Vietnamese"
+    },
+    {
+        "localeIdentifier": "xog_UG",
+        "description": "Soga (Uganda)"
+    },
+    {
+        "localeIdentifier": "xog",
+        "description": "Soga"
+    },
+    {
+        "localeIdentifier": "en_IS",
+        "description": "English (Iceland)"
+    },
+    {
+        "localeIdentifier": "nb",
+        "description": "Norwegian Bokmål"
+    },
+    {
+        "localeIdentifier": "seh_MZ",
+        "description": "Sena (Mozambique)"
+    },
+    {
+        "localeIdentifier": "ars",
+        "description": "Najdi Arabic"
+    },
+    {
+        "localeIdentifier": "es_AR",
+        "description": "Spanish (Argentina)"
+    },
+    {
+        "localeIdentifier": "sk_SK",
+        "description": "Slovak (Slovakia)"
+    },
+    {
+        "localeIdentifier": "en_SH",
+        "description": "English (St. Helena)"
+    },
+    {
+        "localeIdentifier": "ti_ER",
+        "description": "Tigrinya (Eritrea)"
+    },
+    {
+        "localeIdentifier": "nd",
+        "description": "North Ndebele"
+    },
+    {
+        "localeIdentifier": "az_Cyrl_AZ",
+        "description": "Azerbaijani (Cyrillic, Azerbaijan)"
+    },
+    {
+        "localeIdentifier": "zu",
+        "description": "Zulu"
+    },
+    {
+        "localeIdentifier": "ne",
+        "description": "Nepali"
+    },
+    {
+        "localeIdentifier": "nd_ZW",
+        "description": "North Ndebele (Zimbabwe)"
+    },
+    {
+        "localeIdentifier": "el_CY",
+        "description": "Greek (Cyprus)"
+    },
+    {
+        "localeIdentifier": "en_IT",
+        "description": "English (Italy)"
+    },
+    {
+        "localeIdentifier": "nl_BQ",
+        "description": "Dutch (Caribbean Netherlands)"
+    },
+    {
+        "localeIdentifier": "da_GL",
+        "description": "Danish (Greenland)"
+    },
+    {
+        "localeIdentifier": "ja",
+        "description": "Japanese"
+    },
+    {
+        "localeIdentifier": "rm",
+        "description": "Romansh"
+    },
+    {
+        "localeIdentifier": "fr_ML",
+        "description": "French (Mali)"
+    },
+    {
+        "localeIdentifier": "rn",
+        "description": "Rundi"
+    },
+    {
+        "localeIdentifier": "en_VU",
+        "description": "English (Vanuatu)"
+    },
+    {
+        "localeIdentifier": "rof_TZ",
+        "description": "Rombo (Tanzania)"
+    },
+    {
+        "localeIdentifier": "ro",
+        "description": "Romanian"
+    },
+    {
+        "localeIdentifier": "ebu_KE",
+        "description": "Embu (Kenya)"
+    },
+    {
+        "localeIdentifier": "ru_KG",
+        "description": "Russian (Kyrgyzstan)"
+    },
+    {
+        "localeIdentifier": "en_SI",
+        "description": "English (Slovenia)"
+    },
+    {
+        "localeIdentifier": "sg_CF",
+        "description": "Sango (Central African Republic)"
+    },
+    {
+        "localeIdentifier": "mfe_MU",
+        "description": "Morisyen (Mauritius)"
+    },
+    {
+        "localeIdentifier": "nl",
+        "description": "Dutch"
+    },
+    {
+        "localeIdentifier": "brx",
+        "description": "Bodo"
+    },
+    {
+        "localeIdentifier": "bs_Latn",
+        "description": "Bosnian (Latin)"
+    },
+    {
+        "localeIdentifier": "fa",
+        "description": "Persian"
+    },
+    {
+        "localeIdentifier": "zgh_MA",
+        "description": "Standard Moroccan Tamazight (Morocco)"
+    },
+    {
+        "localeIdentifier": "en_GM",
+        "description": "English (Gambia)"
+    },
+    {
+        "localeIdentifier": "shi_Latn",
+        "description": "Tachelhit (Latin)"
+    },
+    {
+        "localeIdentifier": "en_FI",
+        "description": "English (Finland)"
+    },
+    {
+        "localeIdentifier": "nn",
+        "description": "Norwegian Nynorsk"
+    },
+    {
+        "localeIdentifier": "en_EE",
+        "description": "English (Estonia)"
+    },
+    {
+        "localeIdentifier": "ru",
+        "description": "Russian"
+    },
+    {
+        "localeIdentifier": "yue",
+        "description": "Cantonese"
+    },
+    {
+        "localeIdentifier": "kam_KE",
+        "description": "Kamba (Kenya)"
+    },
+    {
+        "localeIdentifier": "fur",
+        "description": "Friulian"
+    },
+    {
+        "localeIdentifier": "vai_Vaii",
+        "description": "Vai (Vai)"
+    },
+    {
+        "localeIdentifier": "ar_ER",
+        "description": "Arabic (Eritrea)"
+    },
+    {
+        "localeIdentifier": "rw",
+        "description": "Kinyarwanda"
+    },
+    {
+        "localeIdentifier": "ti_ET",
+        "description": "Tigrinya (Ethiopia)"
+    },
+    {
+        "localeIdentifier": "ff",
+        "description": "Fulah"
+    },
+    {
+        "localeIdentifier": "luo",
+        "description": "Luo"
+    },
+    {
+        "localeIdentifier": "fa_AF",
+        "description": "Persian (Afghanistan)"
+    },
+    {
+        "localeIdentifier": "nl_CW",
+        "description": "Dutch (Curaçao)"
+    },
+    {
+        "localeIdentifier": "en_HR",
+        "description": "English (Croatia)"
+    },
+    {
+        "localeIdentifier": "en_FJ",
+        "description": "English (Fiji)"
+    },
+    {
+        "localeIdentifier": "fi",
+        "description": "Finnish"
+    },
+    {
+        "localeIdentifier": "pt_MO",
+        "description": "Portuguese (Macau [China])"
+    },
+    {
+        "localeIdentifier": "be",
+        "description": "Belarusian"
+    },
+    {
+        "localeIdentifier": "en_US",
+        "description": "English (United States)"
+    },
+    {
+        "localeIdentifier": "en_TO",
+        "description": "English (Tonga)"
+    },
+    {
+        "localeIdentifier": "en_SK",
+        "description": "English (Slovakia)"
+    },
+    {
+        "localeIdentifier": "bg",
+        "description": "Bulgarian"
+    },
+    {
+        "localeIdentifier": "ru_BY",
+        "description": "Russian (Belarus)"
+    },
+    {
+        "localeIdentifier": "it_IT",
+        "description": "Italian (Italy)"
+    },
+    {
+        "localeIdentifier": "ml_IN",
+        "description": "Malayalam (India)"
+    },
+    {
+        "localeIdentifier": "gsw_CH",
+        "description": "Swiss German (Switzerland)"
+    },
+    {
+        "localeIdentifier": "qu_EC",
+        "description": "Quechua (Ecuador)"
+    },
+    {
+        "localeIdentifier": "fo",
+        "description": "Faroese"
+    },
+    {
+        "localeIdentifier": "sv_FI",
+        "description": "Swedish (Finland)"
+    },
+    {
+        "localeIdentifier": "en_FK",
+        "description": "English (Falkland Islands)"
+    },
+    {
+        "localeIdentifier": "nus",
+        "description": "Nuer"
+    },
+    {
+        "localeIdentifier": "ta_LK",
+        "description": "Tamil (Sri Lanka)"
+    },
+    {
+        "localeIdentifier": "vun",
+        "description": "Vunjo"
+    },
+    {
+        "localeIdentifier": "sr_Latn",
+        "description": "Serbian (Latin)"
+    },
+    {
+        "localeIdentifier": "es_BZ",
+        "description": "Spanish (Belize)"
+    },
+    {
+        "localeIdentifier": "fr",
+        "description": "French"
+    },
+    {
+        "localeIdentifier": "en_SL",
+        "description": "English (Sierra Leone)"
+    },
+    {
+        "localeIdentifier": "bm",
+        "description": "Bambara"
+    },
+    {
+        "localeIdentifier": "ar_BH",
+        "description": "Arabic (Bahrain)"
+    },
+    {
+        "localeIdentifier": "guz",
+        "description": "Gusii"
+    },
+    {
+        "localeIdentifier": "bn",
+        "description": "Bengali"
+    },
+    {
+        "localeIdentifier": "bo",
+        "description": "Tibetan"
+    },
+    {
+        "localeIdentifier": "ar_SY",
+        "description": "Arabic (Syria)"
+    },
+    {
+        "localeIdentifier": "lo_LA",
+        "description": "Lao (Laos)"
+    },
+    {
+        "localeIdentifier": "ne_NP",
+        "description": "Nepali (Nepal)"
+    },
+    {
+        "localeIdentifier": "uz_Latn",
+        "description": "Uzbek (Latin)"
+    },
+    {
+        "localeIdentifier": "be_BY",
+        "description": "Belarusian (Belarus)"
+    },
+    {
+        "localeIdentifier": "es_IC",
+        "description": "Spanish (Canary Islands)"
+    },
+    {
+        "localeIdentifier": "sr_Latn_XK",
+        "description": "Serbian (Latin, Kosovo)"
+    },
+    {
+        "localeIdentifier": "ar_MA",
+        "description": "Arabic (Morocco)"
+    },
+    {
+        "localeIdentifier": "pa_Guru_IN",
+        "description": "Punjabi (Gurmukhi, India)"
+    },
+    {
+        "localeIdentifier": "br",
+        "description": "Breton"
+    },
+    {
+        "localeIdentifier": "luy",
+        "description": "Luyia"
+    },
+    {
+        "localeIdentifier": "kde_TZ",
+        "description": "Makonde (Tanzania)"
+    },
+    {
+        "localeIdentifier": "bs",
+        "description": "Bosnian"
+    },
+    {
+        "localeIdentifier": "fy",
+        "description": "Western Frisian"
+    },
+    {
+        "localeIdentifier": "fur_IT",
+        "description": "Friulian (Italy)"
+    },
+    {
+        "localeIdentifier": "hu_HU",
+        "description": "Hungarian (Hungary)"
+    },
+    {
+        "localeIdentifier": "ar_AE",
+        "description": "Arabic (United Arab Emirates)"
+    },
+    {
+        "localeIdentifier": "en_HU",
+        "description": "English (Hungary)"
+    },
+    {
+        "localeIdentifier": "sah_RU",
+        "description": "Sakha (Russia)"
+    },
+    {
+        "localeIdentifier": "zh_Hans",
+        "description": "Chinese (Simplified)"
+    },
+    {
+        "localeIdentifier": "en_FM",
+        "description": "English (Micronesia)"
+    },
+    {
+        "localeIdentifier": "sq_AL",
+        "description": "Albanian (Albania)"
+    },
+    {
+        "localeIdentifier": "ko_KP",
+        "description": "Korean (North Korea)"
+    },
+    {
+        "localeIdentifier": "en_150",
+        "description": "English (Europe)"
+    },
+    {
+        "localeIdentifier": "en_DE",
+        "description": "English (Germany)"
+    },
+    {
+        "localeIdentifier": "ce_RU",
+        "description": "Chechen (Russia)"
+    },
+    {
+        "localeIdentifier": "en_CA",
+        "description": "English (Canada)"
+    },
+    {
+        "localeIdentifier": "hsb_DE",
+        "description": "Upper Sorbian (Germany)"
+    },
+    {
+        "localeIdentifier": "fr_MQ",
+        "description": "French (Martinique)"
+    },
+    {
+        "localeIdentifier": "en_TR",
+        "description": "English (Turkey)"
+    },
+    {
+        "localeIdentifier": "ro_MD",
+        "description": "Romanian (Moldova)"
+    },
+    {
+        "localeIdentifier": "es_VE",
+        "description": "Spanish (Venezuela)"
+    },
+    {
+        "localeIdentifier": "tg_TJ",
+        "description": "Tajik (Tajikistan)"
+    },
+    {
+        "localeIdentifier": "fr_WF",
+        "description": "French (Wallis & Futuna)"
+    },
+    {
+        "localeIdentifier": "mt_MT",
+        "description": "Maltese (Malta)"
+    },
+    {
+        "localeIdentifier": "kab",
+        "description": "Kabyle"
+    },
+    {
+        "localeIdentifier": "nmg_CM",
+        "description": "Kwasio (Cameroon)"
+    },
+    {
+        "localeIdentifier": "ms_SG",
+        "description": "Malay (Singapore)"
+    },
+    {
+        "localeIdentifier": "en_GR",
+        "description": "English (Greece)"
+    },
+    {
+        "localeIdentifier": "ru_UA",
+        "description": "Russian (Ukraine)"
+    },
+    {
+        "localeIdentifier": "fr_MR",
+        "description": "French (Mauritania)"
+    },
+    {
+        "localeIdentifier": "zh_Hans_MO",
+        "description": "Chinese (Simplified, Macau [China])"
+    },
+    {
+        "localeIdentifier": "ff_GN",
+        "description": "Fulah (Guinea)"
+    },
+    {
+        "localeIdentifier": "bs_Cyrl",
+        "description": "Bosnian (Cyrillic)"
+    },
+    {
+        "localeIdentifier": "sw_UG",
+        "description": "Swahili (Uganda)"
+    },
+    {
+        "localeIdentifier": "ko_KR",
+        "description": "Korean (South Korea)"
+    },
+    {
+        "localeIdentifier": "en_DG",
+        "description": "English (Diego Garcia)"
+    },
+    {
+        "localeIdentifier": "bo_IN",
+        "description": "Tibetan (India)"
+    },
+    {
+        "localeIdentifier": "en_CC",
+        "description": "English (Cocos [Keeling] Islands)"
+    },
+    {
+        "localeIdentifier": "shi_Tfng_MA",
+        "description": "Tachelhit (Tifinagh, Morocco)"
+    },
+    {
+        "localeIdentifier": "lag",
+        "description": "Langi"
+    },
+    {
+        "localeIdentifier": "it_SM",
+        "description": "Italian (San Marino)"
+    },
+    {
+        "localeIdentifier": "os_RU",
+        "description": "Ossetic (Russia)"
+    },
+    {
+        "localeIdentifier": "en_TT",
+        "description": "English (Trinidad & Tobago)"
+    },
+    {
+        "localeIdentifier": "ms_Arab_MY",
+        "description": "Malay (Arabic, Malaysia)"
+    },
+    {
+        "localeIdentifier": "sq_MK",
+        "description": "Albanian (Macedonia)"
+    },
+    {
+        "localeIdentifier": "bem_ZM",
+        "description": "Bemba (Zambia)"
+    },
+    {
+        "localeIdentifier": "kde",
+        "description": "Makonde"
+    },
+    {
+        "localeIdentifier": "ar_OM",
+        "description": "Arabic (Oman)"
+    },
+    {
+        "localeIdentifier": "kk_KZ",
+        "description": "Kazakh (Kazakhstan)"
+    },
+    {
+        "localeIdentifier": "cgg",
+        "description": "Chiga"
+    },
+    {
+        "localeIdentifier": "bas",
+        "description": "Basaa"
+    },
+    {
+        "localeIdentifier": "kam",
+        "description": "Kamba"
+    },
+    {
+        "localeIdentifier": "wae",
+        "description": "Walser"
+    },
+    {
+        "localeIdentifier": "es_MX",
+        "description": "Spanish (Mexico)"
+    },
+    {
+        "localeIdentifier": "sah",
+        "description": "Sakha"
+    },
+    {
+        "localeIdentifier": "zh_Hant",
+        "description": "Chinese (Traditional)"
+    },
+    {
+        "localeIdentifier": "en_GU",
+        "description": "English (Guam)"
+    },
+    {
+        "localeIdentifier": "fr_MU",
+        "description": "French (Mauritius)"
+    },
+    {
+        "localeIdentifier": "fr_KM",
+        "description": "French (Comoros)"
+    },
+    {
+        "localeIdentifier": "ar_LB",
+        "description": "Arabic (Lebanon)"
+    },
+    {
+        "localeIdentifier": "en_BA",
+        "description": "English (Bosnia & Herzegovina)"
+    },
+    {
+        "localeIdentifier": "en_TV",
+        "description": "English (Tuvalu)"
+    },
+    {
+        "localeIdentifier": "sr_Cyrl",
+        "description": "Serbian (Cyrillic)"
+    },
+    {
+        "localeIdentifier": "mzn_IR",
+        "description": "Mazanderani (Iran)"
+    },
+    {
+        "localeIdentifier": "dje",
+        "description": "Zarma"
+    },
+    {
+        "localeIdentifier": "kab_DZ",
+        "description": "Kabyle (Algeria)"
+    },
+    {
+        "localeIdentifier": "fil_PH",
+        "description": "Filipino (Philippines)"
+    },
+    {
+        "localeIdentifier": "se_SE",
+        "description": "Northern Sami (Sweden)"
+    },
+    {
+        "localeIdentifier": "vai",
+        "description": "Vai"
+    },
+    {
+        "localeIdentifier": "hr_HR",
+        "description": "Croatian (Croatia)"
+    },
+    {
+        "localeIdentifier": "bs_Latn_BA",
+        "description": "Bosnian (Latin, Bosnia & Herzegovina)"
+    },
+    {
+        "localeIdentifier": "nl_AW",
+        "description": "Dutch (Aruba)"
+    },
+    {
+        "localeIdentifier": "dav",
+        "description": "Taita"
+    },
+    {
+        "localeIdentifier": "so_SO",
+        "description": "Somali (Somalia)"
+    },
+    {
+        "localeIdentifier": "ar_PS",
+        "description": "Arabic (Palestinian Territories)"
+    },
+    {
+        "localeIdentifier": "en_FR",
+        "description": "English (France)"
+    },
+    {
+        "localeIdentifier": "uz_Cyrl",
+        "description": "Uzbek (Cyrillic)"
+    },
+    {
+        "localeIdentifier": "ff_SN",
+        "description": "Fulah (Senegal)"
+    },
+    {
+        "localeIdentifier": "en_BB",
+        "description": "English (Barbados)"
+    },
+    {
+        "localeIdentifier": "ki_KE",
+        "description": "Kikuyu (Kenya)"
+    },
+    {
+        "localeIdentifier": "en_TW",
+        "description": "English (Taiwan)"
+    },
+    {
+        "localeIdentifier": "naq",
+        "description": "Nama"
+    },
+    {
+        "localeIdentifier": "en_SS",
+        "description": "English (South Sudan)"
+    },
+    {
+        "localeIdentifier": "mg_MG",
+        "description": "Malagasy (Madagascar)"
+    },
+    {
+        "localeIdentifier": "mas_KE",
+        "description": "Masai (Kenya)"
+    },
+    {
+        "localeIdentifier": "en_RO",
+        "description": "English (Romania)"
+    },
+    {
+        "localeIdentifier": "en_PG",
+        "description": "English (Papua New Guinea)"
+    },
+    {
+        "localeIdentifier": "mgh",
+        "description": "Makhuwa-Meetto"
+    },
+    {
+        "localeIdentifier": "dyo_SN",
+        "description": "Jola-Fonyi (Senegal)"
+    },
+    {
+        "localeIdentifier": "mas",
+        "description": "Masai"
+    },
+    {
+        "localeIdentifier": "agq",
+        "description": "Aghem"
+    },
+    {
+        "localeIdentifier": "bn_BD",
+        "description": "Bengali (Bangladesh)"
+    },
+    {
+        "localeIdentifier": "haw",
+        "description": "Hawaiian"
+    },
+    {
+        "localeIdentifier": "yi",
+        "description": "Yiddish"
+    },
+    {
+        "localeIdentifier": "nb_NO",
+        "description": "Norwegian Bokmål (Norway)"
+    },
+    {
+        "localeIdentifier": "da_DK",
+        "description": "Danish (Denmark)"
+    },
+    {
+        "localeIdentifier": "en_DK",
+        "description": "English (Denmark)"
+    },
+    {
+        "localeIdentifier": "saq",
+        "description": "Samburu"
+    },
+    {
+        "localeIdentifier": "ug",
+        "description": "Uyghur"
+    },
+    {
+        "localeIdentifier": "cy_GB",
+        "description": "Welsh (United Kingdom)"
+    },
+    {
+        "localeIdentifier": "fr_YT",
+        "description": "French (Mayotte)"
+    },
+    {
+        "localeIdentifier": "jmc",
+        "description": "Machame"
+    },
+    {
+        "localeIdentifier": "ses_ML",
+        "description": "Koyraboro Senni (Mali)"
+    },
+    {
+        "localeIdentifier": "en_PH",
+        "description": "English (Philippines)"
+    },
+    {
+        "localeIdentifier": "de_DE",
+        "description": "German (Germany)"
+    },
+    {
+        "localeIdentifier": "ar_YE",
+        "description": "Arabic (Yemen)"
+    },
+    {
+        "localeIdentifier": "bm_ML",
+        "description": "Bambara (Mali)"
+    },
+    {
+        "localeIdentifier": "yo",
+        "description": "Yoruba"
+    },
+    {
+        "localeIdentifier": "lkt_US",
+        "description": "Lakota (United States)"
+    },
+    {
+        "localeIdentifier": "uz_Arab_AF",
+        "description": "Uzbek (Arabic, Afghanistan)"
+    },
+    {
+        "localeIdentifier": "jgo",
+        "description": "Ngomba"
+    },
+    {
+        "localeIdentifier": "sl_SI",
+        "description": "Slovenian (Slovenia)"
+    },
+    {
+        "localeIdentifier": "uk",
+        "description": "Ukrainian"
+    },
+    {
+        "localeIdentifier": "en_CH",
+        "description": "English (Switzerland)"
+    },
+    {
+        "localeIdentifier": "asa",
+        "description": "Asu"
+    },
+    {
+        "localeIdentifier": "lg_UG",
+        "description": "Ganda (Uganda)"
+    },
+    {
+        "localeIdentifier": "qu_PE",
+        "description": "Quechua (Peru)"
+    },
+    {
+        "localeIdentifier": "mgo",
+        "description": "Metaʼ"
+    },
+    {
+        "localeIdentifier": "id_ID",
+        "description": "Indonesian (Indonesia)"
+    },
+    {
+        "localeIdentifier": "en_NA",
+        "description": "English (Namibia)"
+    },
+    {
+        "localeIdentifier": "en_GY",
+        "description": "English (Guyana)"
+    },
+    {
+        "localeIdentifier": "zgh",
+        "description": "Standard Moroccan Tamazight"
+    },
+    {
+        "localeIdentifier": "pt_MZ",
+        "description": "Portuguese (Mozambique)"
+    },
+    {
+        "localeIdentifier": "fr_LU",
+        "description": "French (Luxembourg)"
+    },
+    {
+        "localeIdentifier": "ta_MY",
+        "description": "Tamil (Malaysia)"
+    },
+    {
+        "localeIdentifier": "mas_TZ",
+        "description": "Masai (Tanzania)"
+    },
+    {
+        "localeIdentifier": "en_DM",
+        "description": "English (Dominica)"
+    },
+    {
+        "localeIdentifier": "dsb",
+        "description": "Lower Sorbian"
+    },
+    {
+        "localeIdentifier": "mg",
+        "description": "Malagasy"
+    },
+    {
+        "localeIdentifier": "en_BE",
+        "description": "English (Belgium)"
+    },
+    {
+        "localeIdentifier": "ur",
+        "description": "Urdu"
+    },
+    {
+        "localeIdentifier": "fr_GA",
+        "description": "French (Gabon)"
+    },
+    {
+        "localeIdentifier": "ka_GE",
+        "description": "Georgian (Georgia)"
+    },
+    {
+        "localeIdentifier": "nmg",
+        "description": "Kwasio"
+    },
+    {
+        "localeIdentifier": "en_TZ",
+        "description": "English (Tanzania)"
+    },
+    {
+        "localeIdentifier": "eu_ES",
+        "description": "Basque (Spain)"
+    },
+    {
+        "localeIdentifier": "ar_DZ",
+        "description": "Arabic (Algeria)"
+    },
+    {
+        "localeIdentifier": "id",
+        "description": "Indonesian"
+    },
+    {
+        "localeIdentifier": "so_DJ",
+        "description": "Somali (Djibouti)"
+    },
+    {
+        "localeIdentifier": "hsb",
+        "description": "Upper Sorbian"
+    },
+    {
+        "localeIdentifier": "yav",
+        "description": "Yangben"
+    },
+    {
+        "localeIdentifier": "mk",
+        "description": "Macedonian"
+    },
+    {
+        "localeIdentifier": "pa_Arab_PK",
+        "description": "Punjabi (Arabic, Pakistan)"
+    },
+    {
+        "localeIdentifier": "ml",
+        "description": "Malayalam"
+    },
+    {
+        "localeIdentifier": "en_ER",
+        "description": "English (Eritrea)"
+    },
+    {
+        "localeIdentifier": "ig",
+        "description": "Igbo"
+    },
+    {
+        "localeIdentifier": "se_FI",
+        "description": "Northern Sami (Finland)"
+    },
+    {
+        "localeIdentifier": "mn",
+        "description": "Mongolian"
+    },
+    {
+        "localeIdentifier": "ksb",
+        "description": "Shambala"
+    },
+    {
+        "localeIdentifier": "uz",
+        "description": "Uzbek"
+    },
+    {
+        "localeIdentifier": "vi_VN",
+        "description": "Vietnamese (Vietnam)"
+    },
+    {
+        "localeIdentifier": "ii",
+        "description": "Sichuan Yi"
+    },
+    {
+        "localeIdentifier": "qu",
+        "description": "Quechua"
+    },
+    {
+        "localeIdentifier": "en_PK",
+        "description": "English (Pakistan)"
+    },
+    {
+        "localeIdentifier": "ee",
+        "description": "Ewe"
+    },
+    {
+        "localeIdentifier": "ast_ES",
+        "description": "Asturian (Spain)"
+    },
+    {
+        "localeIdentifier": "mr",
+        "description": "Marathi"
+    },
+    {
+        "localeIdentifier": "ms",
+        "description": "Malay"
+    },
+    {
+        "localeIdentifier": "en_ES",
+        "description": "English (Spain)"
+    },
+    {
+        "localeIdentifier": "ha_GH",
+        "description": "Hausa (Ghana)"
+    },
+    {
+        "localeIdentifier": "it_CH",
+        "description": "Italian (Switzerland)"
+    },
+    {
+        "localeIdentifier": "sq_XK",
+        "description": "Albanian (Kosovo)"
+    },
+    {
+        "localeIdentifier": "mt",
+        "description": "Maltese"
+    },
+    {
+        "localeIdentifier": "en_CK",
+        "description": "English (Cook Islands)"
+    },
+    {
+        "localeIdentifier": "br_FR",
+        "description": "Breton (France)"
+    },
+    {
+        "localeIdentifier": "tk_TM",
+        "description": "Turkmen (Turkmenistan)"
+    },
+    {
+        "localeIdentifier": "sr_Cyrl_XK",
+        "description": "Serbian (Cyrillic, Kosovo)"
+    },
+    {
+        "localeIdentifier": "ksf",
+        "description": "Bafia"
+    },
+    {
+        "localeIdentifier": "en_SX",
+        "description": "English (Sint Maarten)"
+    },
+    {
+        "localeIdentifier": "bg_BG",
+        "description": "Bulgarian (Bulgaria)"
+    },
+    {
+        "localeIdentifier": "en_PL",
+        "description": "English (Poland)"
+    },
+    {
+        "localeIdentifier": "af",
+        "description": "Afrikaans"
+    },
+    {
+        "localeIdentifier": "el",
+        "description": "Greek"
+    },
+    {
+        "localeIdentifier": "cs_CZ",
+        "description": "Czech (Czech Republic)"
+    },
+    {
+        "localeIdentifier": "fr_TD",
+        "description": "French (Chad)"
+    },
+    {
+        "localeIdentifier": "zh_Hans_HK",
+        "description": "Chinese (Simplified, Hong Kong [China])"
+    },
+    {
+        "localeIdentifier": "is",
+        "description": "Icelandic"
+    },
+    {
+        "localeIdentifier": "ksh",
+        "description": "Colognian"
+    },
+    {
+        "localeIdentifier": "my",
+        "description": "Burmese"
+    },
+    {
+        "localeIdentifier": "mn_MN",
+        "description": "Mongolian (Mongolia)"
+    },
+    {
+        "localeIdentifier": "en",
+        "description": "English"
+    },
+    {
+        "localeIdentifier": "it",
+        "description": "Italian"
+    },
+    {
+        "localeIdentifier": "dsb_DE",
+        "description": "Lower Sorbian (Germany)"
+    },
+    {
+        "localeIdentifier": "ii_CN",
+        "description": "Sichuan Yi (China)"
+    },
+    {
+        "localeIdentifier": "smn",
+        "description": "Inari Sami"
+    },
+    {
+        "localeIdentifier": "iu",
+        "description": "Inuktitut"
+    },
+    {
+        "localeIdentifier": "eo",
+        "description": "Esperanto"
+    },
+    {
+        "localeIdentifier": "en_ZA",
+        "description": "English (South Africa)"
+    },
+    {
+        "localeIdentifier": "en_AD",
+        "description": "English (Andorra)"
+    },
+    {
+        "localeIdentifier": "ak",
+        "description": "Akan"
+    },
+    {
+        "localeIdentifier": "en_RU",
+        "description": "English (Russia)"
+    },
+    {
+        "localeIdentifier": "kkj_CM",
+        "description": "Kako (Cameroon)"
+    },
+    {
+        "localeIdentifier": "am",
+        "description": "Amharic"
+    },
+    {
+        "localeIdentifier": "es",
+        "description": "Spanish"
+    },
+    {
+        "localeIdentifier": "et",
+        "description": "Estonian"
+    },
+    {
+        "localeIdentifier": "uk_UA",
+        "description": "Ukrainian (Ukraine)"
+    }
+]
