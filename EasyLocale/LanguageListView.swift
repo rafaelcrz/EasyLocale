@@ -12,14 +12,14 @@ struct LanguageListView: View {
     
     var body: some View {
         List {
-            ForEach($exportableList, id:\.id) { $input in
+            ForEach($exportableList, id:\.key) { $input in
                 VStack(alignment: .leading) {
                     Text("\(input.descriptionLanguage) (\(input.codeLanguage))")
                     HStack {
                         TextField("string locale", text: $input.value)
                             .textFieldStyle(.roundedBorder)
                         Button {
-                            removeLanguage(byCode: input.codeLanguage)
+                            removeLanguage(input)
                         } label: {
                             Label("Remove", systemImage: "trash")
                         }
@@ -31,8 +31,14 @@ struct LanguageListView: View {
         }
     }
     
-    private func removeLanguage(byCode: String) {
-        exportableList = exportableList.filter { $0.codeLanguage != byCode }
+    private func removeLanguage(_ language: ExportableLanguage) {
+        guard !exportableList.isEmpty else {
+            return
+        }
+        
+        exportableList = exportableList.filter {
+            $0.key != language.key
+        }
     }
 }
 
