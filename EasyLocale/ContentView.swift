@@ -32,7 +32,7 @@ struct ContentView: View {
             Text("Translations")
                 .multilineTextAlignment(.leading)
                 .fontWeight(.bold)
-            LanguageListView(exportableList: $viewModel.languagesToExport)
+            LanguageListView(exportableList: $viewModel.languagesToEdit)
                 .navigationSplitViewColumnWidth(min: columnWidth, ideal: columnWidth)
             
             VStack(alignment: .leading) {
@@ -98,7 +98,7 @@ private extension ContentView {
     func importPanel() -> [URL]? {
         let panel = NSOpenPanel();
         panel.showsHiddenFiles = false
-        panel.canChooseDirectories = false
+        panel.canChooseDirectories = true
         panel.allowsMultipleSelection = true
         panel.allowedContentTypes = [.strings]
         panel.runModal()
