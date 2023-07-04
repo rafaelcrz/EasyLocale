@@ -10,6 +10,7 @@ import Foundation
 protocol LProjHelperProtocol {
     func createLProj(at path: URL, language: String, fileContent content: String)
     func getLProjLanguage(at path: URL) -> String?
+    func createSwiftStrings(at path: URL, fileContent content: String)
 }
 
 final class LProjHelper: LProjHelperProtocol {
@@ -23,6 +24,10 @@ final class LProjHelper: LProjHelperProtocol {
         let lprojPath: String? = path.pathComponents.first(where: { $0.contains(".lproj") })
         let stringsPath: String? = path.pathComponents.first(where: { $0.contains(".strings") })
         return (lprojPath as? NSString)?.deletingPathExtension ?? (stringsPath as? NSString)?.deletingPathExtension
+    }
+    
+    func createSwiftStrings(at path: URL, fileContent content: String) {
+        createFile(at: path, with: content, extension: "Strings.swift")
     }
 }
 
