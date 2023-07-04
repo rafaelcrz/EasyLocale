@@ -93,3 +93,19 @@ final class ExportableStringSwiftFileViewModel: ObservableObject {
         }
     }
 }
+
+private extension String {
+    var withoutPunctuations: String {
+        return self.components(separatedBy: CharacterSet.punctuationCharacters)
+            .map { $0.capitalized }
+            .joined(separator: "")
+            .replacingOccurrences(of: " ", with: "")
+            .capitalizedSentence
+    }
+    
+    var capitalizedSentence: String {
+        let firstLetter = self.prefix(1).lowercased()
+        let remainingLetters = self.dropFirst()
+        return firstLetter + remainingLetters
+    }
+}
