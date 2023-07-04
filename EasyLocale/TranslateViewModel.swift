@@ -101,7 +101,6 @@ final class TranslateViewModel: ObservableObject {
                             }
                         }
                     } else {
-                        print("🐞 isFile path: ", url)
                         fullContent = try String(contentsOf: url)
                         stringFileName = self.lProjHelper.getLProjLanguage(at: url)
                     }
@@ -118,7 +117,6 @@ final class TranslateViewModel: ObservableObject {
                     
                     for line in lines {
                         guard !line.isEmpty else {
-                            print("==> ERRO ", line, stringFileName)
                             continue
                         }
                         
@@ -131,7 +129,6 @@ final class TranslateViewModel: ObservableObject {
                         })
                         
                         guard let key = pair.object(index: 0), let value = pair.object(index: 1) else {
-                            print("==> ERRO ", line)
                             continue
                         }
                         
