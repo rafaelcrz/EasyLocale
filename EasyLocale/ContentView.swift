@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ContentView: View {
     private let columnWidth: CGFloat = 500
-    
+    @State var showingPreview: Bool = false
     @StateObject var viewModel: TranslateViewModel = .init()
     
     var body: some View {
@@ -53,7 +53,7 @@ struct ContentView: View {
             }.padding()
             
         } detail: {
-            VStack {
+            VStack(alignment: .leading) {
                 ExportableLocaleDetailView(
                     shouldShowProgressView: viewModel.shouldShowProgressView(),
                     progress: viewModel.progress,
@@ -66,21 +66,31 @@ struct ContentView: View {
                     }, actionEdit: {
                         viewModel.editTransaction($0)
                     }
-                ).navigationSplitViewColumnWidth(min: columnWidth, ideal: columnWidth)
+                )
                 
-                // MARK: - File Options
                 HStack {
-                    ButtonImage(systemName: .import, text: "Import .strings") {
+                    ButtonImage(systemName: .import, text: "Import lproj/strings") {
                         viewModel.importStringLanguage(urls: importPanel())
                     }
                     
-                    ButtonImage(systemName: .export, text: "Export .strings") {
+                    ButtonImage(systemName: .export, text: "Export .lproj/strings") {
                         viewModel.exportTransalationToStringsFile(url: exportPanel())
                     }
                     
-                    Spacer()
+                    ButtonImage(systemName: .generate, text: "Generate swift strings") {
+                        showingPreview.toggle()
+                    }
                 }
-            }.padding()
+            }
+            .navigationSplitViewColumnWidth(min: columnWidth, ideal: columnWidth)
+            .padding()
+        }.sheet(isPresented: $showingPreview) {
+            ExportableStringSwiftFileView(exportableLanguages: viewModel.exportableLanguages)
+            .toolbar {
+                Button("Close", action: {
+                    showingPreview = false
+                })
+            }
         }
     }
 }
@@ -110,6 +120,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .padding()
-            .previewLayout(.fixed(width: 950, height: 400))
+            .previewLayout(.fixed(width: 1010, height: 400))
     }
 }
