@@ -16,5 +16,7 @@ enum Constants {
         case trash = "trash"
         case edit = "pencil"
         case update = "arrow.triangle.2.circlepath"
+        case generate = "sparkles"
+        case preview = "eyes.inverse"
     }
 }
