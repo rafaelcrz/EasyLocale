@@ -88,7 +88,7 @@ final class ExportableStringSwiftFileViewModel: ObservableObject {
             previewStringFile = content
             
             if let url = url {
-                lProjHelper.createEnumeratorStrings(at: url, fileContent: content)
+                lProjHelper.createSwiftStrings(at: url, fileContent: content)
             }
         }
     }
