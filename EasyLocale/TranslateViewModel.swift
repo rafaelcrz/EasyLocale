@@ -8,12 +8,10 @@
 import Foundation
 
 final class TranslateViewModel: ObservableObject {
-    private let localizableStringsFileName: String = "Localizable.strings"
-    private let localizableStringsFolderExtension: String = ".lproj"
-    private let aplicationLocale: String = "en-US"
+    private let aplicationLocale: String = "en"
     
     // MARK: - Publshiers
-    @Published var languagesToExport: [ExportableLanguage] = []
+    @Published var languagesToEdit: [ExportableLanguage] = []
     @Published var selectedLanguage: String = ""
     @Published var availableLanguages: [Language] = []
     @Published var currentKey: String = ""
@@ -22,7 +20,9 @@ final class TranslateViewModel: ObservableObject {
     @Published var progress: Double = 0.0
     @Published var numberOfFiles: Int = 0
     @Published var numberOfLines: Int = 0
+    @Published var previewStringFile: String = ""
     
+    private let lProjHelper: LProjHelperProtocol = LProjHelper()
     private let languageWrapper: LanguageWrapper = LanguageWrapper()
     
     init() {
@@ -30,12 +30,17 @@ final class TranslateViewModel: ObservableObject {
         selectedLanguage = availableLanguages.first?.localeIdentifier ?? ""
     }
     
+    private func resetData() {
+        currentKey = ""
+        languagesToEdit = []
+    }
+    
     func addNewLanguageToTranslation() {
         guard let language: Language = availableLanguages.first(where: { $0.localeIdentifier == selectedLanguage }) else {
             return
         }
         
-        guard !languagesToExport.contains(where: { $0.codeLanguage == selectedLanguage }) else {
+        guard !languagesToEdit.contains(where: { $0.codeLanguage == language.localeIdentifier }) else {
             return
         }
         
@@ -46,11 +51,11 @@ final class TranslateViewModel: ObservableObject {
             descriptionLanguage: language.description
         )
         
-        languagesToExport.append(exportableLanguage)
+        languagesToEdit.append(exportableLanguage)
     }
     
     func updateStringsFileWithCurrentKeyValue() {
-        for exportable in languagesToExport {
+        for exportable in languagesToEdit {
             let exportableLanguage: ExportableLanguage = .init(
                 key: currentKey,
                 value: exportable.value,
@@ -58,13 +63,12 @@ final class TranslateViewModel: ObservableObject {
                 descriptionLanguage: exportable.descriptionLanguage
             )
             
-            if let index = exportableLanguages.firstIndex(where: { $0.key == exportable.key && $0.codeLanguage == exportable.codeLanguage && $0.value != exportable.value }) {
-                exportableLanguages[index] = exportable
+            if let index = exportableLanguages.firstIndex(where: { $0.id == exportable.id }), index > 0, index < exportableLanguages.count {
+                exportableLanguages[index] = exportableLanguage
             } else {
                 exportableLanguages.append(exportableLanguage)
             }
         }
-        
     }
     
     func importStringLanguage(urls: [URL]?) {
@@ -80,10 +84,30 @@ final class TranslateViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.progress = 0
                 }
+                
                 do {
-                    let fullContent: String = try String(contentsOf: url)
-                    guard let stringFileName = self.getFolderName(fromURL: url) else {
-                        return
+                    var stringFileName: String?
+                    var fullContent: String?
+                    let isDirectory: Bool = try url.resourceValues(forKeys: [.isDirectoryKey]).isDirectory ?? false
+                    
+                    if isDirectory {
+                        let enumerator = FileManager.default.enumerator(atPath: url.relativePath)
+                        let filePaths = enumerator?.allObjects as! [String]
+                        let textFilePaths = filePaths.filter { $0.contains(".strings") }
+                        for textFilePath in textFilePaths {
+                            if let path = URL(string: url.absoluteString + textFilePath) {
+                                fullContent = try String(contentsOf: path)
+                                stringFileName = self.lProjHelper.getLProjLanguage(at: path)
+                            }
+                        }
+                    } else {
+                        print("🐞 isFile path: ", url)
+                        fullContent = try String(contentsOf: url)
+                        stringFileName = self.lProjHelper.getLProjLanguage(at: url)
+                    }
+                    
+                    guard let fullContent = fullContent, let stringFileName = stringFileName else {
+                        continue
                     }
                     
                     let lines: [String] = fullContent.components(separatedBy: .newlines)
@@ -92,45 +116,44 @@ final class TranslateViewModel: ObservableObject {
                         self.numberOfLines = lines.count
                     }
                     
-                    lines
-                        .forEach { line in
-                            guard !line.isEmpty else {
-                                print("==> ERRO ", line, stringFileName)
-                                return
-                            }
-                            
-                            let pair: [String] = line
-                                .replacingOccurrences(of: "\"", with: "", options: .literal)
-                                .components(separatedBy: "=")
-                            
-                            let country: Language? = self.languageWrapper.fetchAvailableLanguages().first(where: {
-                                return $0.localeIdentifier == stringFileName
-                            })
-                            //caso onde só tenha a chave e nao o valor
-                            guard let key = pair.object(index: 0), let value = pair.object(index: 1) else {
-                                print("==> ERRO ", line)
-                                return
-                            }
-                            
-                            DispatchQueue.main.async {
-                                self.progress += 1
-                            }
-                            
-                            let exportableLanguage: ExportableLanguage = .init(
-                                key: key,
-                                value: self.saniitedValueIfNeeded(value),
-                                codeLanguage: stringFileName,
-                                descriptionLanguage: ("\(Locale(identifier: self.aplicationLocale).localizedString(forLanguageCode: stringFileName) ?? "nullo") - \(country?.description ?? "")")
-                            )
-                            
-                            guard !self.exportableLanguages.contains(where: { $0.key == key && $0.codeLanguage == stringFileName }) else {
-                                return
-                            }
-                            
-                            DispatchQueue.main.async {
-                                self.exportableLanguages.append(exportableLanguage)
-                            }
+                    for line in lines {
+                        guard !line.isEmpty else {
+                            print("==> ERRO ", line, stringFileName)
+                            continue
                         }
+                        
+                        let pair: [String] = line
+                            .replacingOccurrences(of: "\"", with: "", options: .literal)
+                            .components(separatedBy: "=")
+                        
+                        let country: Language? = self.languageWrapper.fetchAvailableLanguages().first(where: {
+                            return $0.localeIdentifier == stringFileName
+                        })
+                        
+                        guard let key = pair.object(index: 0), let value = pair.object(index: 1) else {
+                            print("==> ERRO ", line)
+                            continue
+                        }
+                        
+                        DispatchQueue.main.async {
+                            self.progress += 1
+                        }
+                        
+                        let exportableLanguage: ExportableLanguage = .init(
+                            key: key,
+                            value: value.sanitizedValueIfNeeded,
+                            codeLanguage: stringFileName,
+                            descriptionLanguage: ("\(Locale(identifier: self.aplicationLocale).localizedString(forLanguageCode: stringFileName) ?? "nullo") - \(country?.description ?? "")")
+                        )
+                        
+                        guard !self.exportableLanguages.contains(where: { $0.key == key && $0.codeLanguage == stringFileName }) else {
+                            continue
+                        }
+                        
+                        DispatchQueue.main.async {
+                            self.exportableLanguages.append(exportableLanguage)
+                        }
+                    }
                 } catch {
                     fatalError(error.localizedDescription)
                 }
@@ -143,24 +166,25 @@ final class TranslateViewModel: ObservableObject {
             return
         }
         
-        let languageGroup: [String: [ExportableLanguage]] = Dictionary(grouping: exportableLanguages, by: {
-            return $0.codeLanguage
-        })
-        
-        languageGroup.forEach { language, translations in
-            var lines: [String] = []
+        Dictionary(grouping: exportableLanguages, by: { $0.codeLanguage }).forEach { language, translations in
+            var stringsLine: [String] = []
             
             for translation in translations {
-                lines.append("\"\(translation.key)\"= \"\(translation.value)\";")
+                stringsLine.append("\"\(translation.key)\"= \"\(translation.value)\";")
             }
             
+            let content: String = stringsLine.joined(separator: "\n")
             
-            let folderPath: URL = url.appendingPathComponent("\(language)\(localizableStringsFolderExtension)")
-            createStringsFolder(path: folderPath)
-            
-            let content: String = lines.joined(separator: "\n")
-            createStringsFile(path: folderPath, content: content)
+            lProjHelper.createLProj(
+                at: url,
+                language: language,
+                fileContent: content
+            )
         }
+    }
+    
+    func getPreviewStringFile() -> String {
+        return ""
     }
     
     func getListOfTranslationsFile() -> [String] {
@@ -186,9 +210,10 @@ final class TranslateViewModel: ObservableObject {
     }
     
     func editTransaction(_ translation: ExportableLanguage) {
+        resetData()
         currentKey = translation.key
         selectedLanguage = translation.codeLanguage
-        languagesToExport.append(translation)
+        languagesToEdit.append(translation)
     }
     
     func shouldShowProgressView() -> Bool {
@@ -197,49 +222,9 @@ final class TranslateViewModel: ObservableObject {
 }
 
 private extension TranslateViewModel {
-    private func createStringsFolder(path: URL) {
-        do {
-            try FileManager.default.createDirectory(at: path, withIntermediateDirectories: true)
-        } catch {
-            fatalError(error.localizedDescription)
-        }
-    }
-    
-    private func createStringsFile(path: URL, content: String) {
-        do {
-            let filePath: URL = path.appendingPathComponent(localizableStringsFileName)
-            try content.write(to: filePath, atomically: true, encoding: .utf8)
-        } catch {
-            fatalError(error.localizedDescription)
-        }
-    }
-    
     private func exportableGroupedByCode() -> [String: [ExportableLanguage]] {
         return Dictionary(grouping: exportableLanguages) { exportable in
             return exportable.codeLanguage
         }
-    }
-    
-    private func saniitedValueIfNeeded(_ value: String) -> String {
-        var saniitedString: String = value
-        
-        if value.last == ";" {
-            saniitedString = String(value.dropLast())
-        }
-        
-        if value.first == " " {
-            saniitedString = String(saniitedString.dropFirst())
-        }
-        
-        return saniitedString
-    }
-    
-    private func getFolderName(fromURL url: URL) -> String? {
-        let index: Int = (url.pathComponents.count - 2)
-        guard let path = url.pathComponents.object(index: index) else {
-            return nil
-        }
-        
-        return (path as NSString).deletingPathExtension
     }
 }
