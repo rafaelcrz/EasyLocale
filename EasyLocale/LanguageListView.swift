@@ -12,7 +12,7 @@ struct LanguageListView: View {
     
     var body: some View {
         List {
-            ForEach($exportableList, id:\.key) { $input in
+            ForEach($exportableList, id:\.codeLanguage) { $input in
                 VStack(alignment: .leading) {
                     Text("\(input.descriptionLanguage) (\(input.codeLanguage))")
                     HStack {
