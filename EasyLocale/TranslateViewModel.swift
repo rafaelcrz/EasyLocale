@@ -32,7 +32,13 @@ final class TranslateViewModel: ObservableObject {
     
     private func resetData() {
         currentKey = ""
-        languagesToEdit = []
+        languagesToEdit = languagesToEdit.map {
+            var language: ExportableLanguage = $0
+            language.value = ""
+            language.key = ""
+            language.id = UUID()
+            return language
+        }
     }
     
     func addNewLanguageToTranslation() {
@@ -69,6 +75,8 @@ final class TranslateViewModel: ObservableObject {
                 exportableLanguages.append(exportableLanguage)
             }
         }
+        
+        resetData()
     }
     
     func importStringLanguage(urls: [URL]?) {
@@ -76,6 +84,8 @@ final class TranslateViewModel: ObservableObject {
         guard let urls = urls else {
             return
         }
+        
+        exportableLanguages = []
         
         numberOfFiles = urls.count
         
