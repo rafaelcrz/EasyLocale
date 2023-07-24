@@ -8,7 +8,7 @@
 import Foundation
 
 struct ExportableLanguage {
-    let id: UUID = UUID()
+    var id: UUID = UUID()
     var key: String
     var value: String
     let codeLanguage: String
