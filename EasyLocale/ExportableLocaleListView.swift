@@ -21,11 +21,11 @@ struct ExportableLocaleListView: View {
         if search.isEmpty {
             return exportables
         } else {
-            return exportables.filter {
-                $0.value.contains(where: {
-                    return $0.key.uppercased() == search.uppercased()
-                })
-            }
+            return [
+                currentFile: exportables[currentFile]?.filter({ language in
+                    return language.key.lowercased().contains(search.lowercased())
+                }) ?? []
+            ]
         }
     }
     
